@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_playerMask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -29,6 +29,7 @@
 lastDir = myDir;
 mySword = instance_create(x,y,obj_sword);
 mySword.visible = false
+moveRate = 8
 </string>
           </argument>
         </arguments>
@@ -93,19 +94,19 @@ mySword.visible = false
             <kind>1</kind>
             <string>if keyboard_check(vk_left)
    {
-   hspeed = -5;
+   hspeed = -moveRate;
    } 
 if keyboard_check(vk_right)
    {
-   hspeed = 5;
+   hspeed = moveRate;
    }
 if keyboard_check(vk_up)
    {
-   vspeed = -5;
+   vspeed = -moveRate;
    }
 if keyboard_check(vk_down)
    {
-   vspeed = 5;
+   vspeed = moveRate;
    }
    
 if !keyboard_check(vk_left) &amp;&amp; !keyboard_check(vk_right)
@@ -149,8 +150,8 @@ if speed != 0
 mySword.image_angle -= lastDir;
 mySword.image_angle += myDir;
 lastDir = myDir;
-mySword.direction = direction;
-mySword.speed = speed;
+mySword.x = x;
+mySword.y = y;
 </string>
           </argument>
         </arguments>
@@ -192,6 +193,28 @@ mySword.speed = speed;
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>COLLISION</string>
           </argument>
         </arguments>
       </action>
