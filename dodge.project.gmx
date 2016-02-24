@@ -12,7 +12,6 @@
     <sprite>sprites\spr_useSword</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_chain</sprite>
-    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -30,7 +29,6 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
-    <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
