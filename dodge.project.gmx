@@ -16,8 +16,15 @@
     <sprite>sprites\spr_chain</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprites name="enemies">
+      <sprite>sprites\spr_fuzzball</sprite>
+      <sprite>sprites\spr_eyeplant</sprite>
+    </sprites>
+    <sprite>sprites\spr_me</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\swingSword.gml</script>
@@ -38,6 +45,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\gideonRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
