@@ -54,29 +54,30 @@ moveRate = 8;
             <kind>1</kind>
             <string>var dy = 0;
 var dx = 0;
+baseimgspd = 0.5;
 image_speed = 0;
 if keyboard_check(vk_left)
    {
    dx = -moveRate;
-   image_speed = 20;
+   image_speed = baseimgspd;
    if sprite_index != spr_me_l then sprite_index = spr_me_l;
    } 
 if keyboard_check(vk_right)
    {
    dx = moveRate;
-   image_speed = 20;
+   image_speed = baseimgspd;
    if sprite_index != spr_me_r then sprite_index = spr_me_r;
    }
 if keyboard_check(vk_up)
    {
    dy = -moveRate;
-   image_speed = 20;
+   image_speed = baseimgspd;
    if sprite_index != spr_me_u then sprite_index = spr_me_u;
    }
 if keyboard_check(vk_down)
    {
    dy = moveRate;
-   image_speed = 20;
+   image_speed = baseimgspd;
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
    

@@ -50,8 +50,8 @@
     <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\gideonRoom</room>
+    <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
   </rooms>
