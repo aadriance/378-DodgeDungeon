@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Draw Sprite along Path</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -18,7 +20,12 @@
       <sprite>sprites\spr_fuzzball</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
     </sprites>
-    <sprite>sprites\spr_me</sprite>
+    <sprites name="spr_me">
+      <sprite>sprites\spr_me_d</sprite>
+      <sprite>sprites\spr_me_l</sprite>
+      <sprite>sprites\spr_me_r</sprite>
+      <sprite>sprites\spr_me_u</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
