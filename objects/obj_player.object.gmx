@@ -56,28 +56,33 @@ moveRate = 8;
 var dx = 0;
 baseimgspd = 0.5;
 image_speed = 0;
+
 if keyboard_check(vk_left)
    {
    dx = -moveRate;
    image_speed = baseimgspd;
+   if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_l then sprite_index = spr_me_l;
    } 
 if keyboard_check(vk_right)
    {
    dx = moveRate;
    image_speed = baseimgspd;
+   if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_r then sprite_index = spr_me_r;
    }
 if keyboard_check(vk_up)
    {
    dy = -moveRate;
    image_speed = baseimgspd;
+   if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_u then sprite_index = spr_me_u;
    }
 if keyboard_check(vk_down)
    {
    dy = moveRate;
    image_speed = baseimgspd;
+   if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
    
@@ -115,6 +120,7 @@ if (abs(dx) + abs(dy) != 0) {
           <argument>
             <kind>1</kind>
             <string>if keyboard_check_pressed(vk_space) &amp;&amp; !mySword.inUse {
+   audio_play_sound(snd_sword, 0, 0);
    swingSword(mySword);
 }
 
