@@ -29,6 +29,7 @@
       <sprite>sprites\spr_me_r</sprite>
       <sprite>sprites\spr_me_u</sprite>
     </sprites>
+    <sprite>sprites\spr_bullet_test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -52,9 +53,11 @@
     <object>objects\obj_fuzzball</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\gideonRoom</room>
+    <room>rooms\bullet_test</room>
     <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
