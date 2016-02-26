@@ -86,6 +86,10 @@ alarm[0] = updateRate
 
 if (hasTarget) {
     var angle = point_direction(x, y, player.x, player.y);
+    instance_create(obj_enemy.x, obj_enemy.y, obj_bullet);
+
+    
+    
     //if (angle - image_angle &lt; 20) {
        image_angle = angle;
     /*}
