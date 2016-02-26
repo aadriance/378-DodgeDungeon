@@ -6,7 +6,10 @@
   <NewExtensions>
     <extension index="0">extensions\Draw Sprite along Path</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_walk</sound>
+    <sound>sound\snd_sword</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_playerMask</sprite>
