@@ -56,8 +56,8 @@
     <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\bullet_test</room>
     <room>rooms\gideonRoom</room>
+    <room>rooms\bullet_test</room>
     <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>

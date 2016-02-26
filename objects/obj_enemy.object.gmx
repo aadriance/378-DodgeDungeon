@@ -27,7 +27,33 @@
             <kind>1</kind>
             <string>hasTarget = false
 updateRate = 10
+shootRate = 15;
 alarm[0] = updateRate
+alarm[1] = shootRate
+canShoot = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canShoot = true;
 </string>
           </argument>
         </arguments>
@@ -53,7 +79,7 @@ alarm[0] = updateRate
             <string>var player = instance_nearest(x, y, obj_player);
 var dist = point_distance(x, y, player.x, player.y);
 
-if (dist &lt; 200) {
+if (dist &lt; 1000) {
     hasTarget = true;
 }
 else {
@@ -86,7 +112,11 @@ alarm[0] = updateRate
 
 if (hasTarget) {
     var angle = point_direction(x, y, player.x, player.y);
-    instance_create(obj_enemy.x, obj_enemy.y, obj_bullet);
+    if (canShoot) {
+        canShoot = false;
+        alarm[1] = shootRate;
+        instance_create(obj_enemy.x, obj_enemy.y, obj_bullet);
+    }
 
     
     
