@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>spr_playerMask</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -90,9 +90,37 @@ if keyboard_check(vk_down)
 if(place_free(x+dx, y)){
    x += dx;
 }
+else {
+   while(abs(dx) &gt; 0) {
+      if (dx &gt; 0) {
+         dx -= 1;
+      }
+      else {
+         dx += 1;
+      }
+      if(place_free(x+dx, y)){
+         x += dx;
+         break;
+      }
+   }
+}
 
 if(place_free(x, y+dy)){
    y += dy;
+}
+else {
+   while(abs(dy) &gt; 0) {
+      if (dy &gt; 0) {
+         dy -= 1;
+      }
+      else {
+         dy += 1;
+      }
+      if(place_free(x, y+dy)){
+         y += dy;
+         break;
+      }
+   }
 }
    
 if (abs(dx) + abs(dy) != 0) {
