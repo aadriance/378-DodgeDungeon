@@ -54,14 +54,6 @@ image_speed = 0.5;
             <kind>1</kind>
             <string>player = instance_find(obj_player, 0);
 
-count += 1;
-
-if(count == 20){
-    count = 0;
-}
-
-//direction = point_direction(x, y, player.x, player.y);
-
 if(x &lt; player.x){
     hspeed += accel;
 }
@@ -81,6 +73,40 @@ if(speed &lt; -maxspd){
 if(speed &gt; maxspd){
     speed = maxspd;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>count += 1;
+
+if(count == 10){
+    bull = instance_create(x, y, obj_basicbullet);
+    bull.direction = irandom(359);
+    bull.speed = 4;
+    bull.accel = -0.2;
+    bull.minspd = 0;
+    bull.ttl = 50;
+    bull.sprite_index = spr_bullet_dark;
+    
+    count = 0;
+}
+
 </string>
           </argument>
         </arguments>
