@@ -30,7 +30,32 @@ lastDir = myDir;
 mySword = instance_create(x,y,obj_sword);
 mySword.visible = false;
 moveRate = 8;
+dashLevel = 100;
+isDashing = false;
+dashModifier = 1.5;
+dashCool = 0;
+dashRate = 4;
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>711</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_life</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
           </argument>
         </arguments>
       </action>
@@ -85,7 +110,28 @@ if keyboard_check(vk_down)
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
+
+if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= dashRate &amp;&amp; dashCool == 0 {
+   isDashing = true;
+}
+else {
+   isDashing = false;
+}
    
+if (isDashing) {
+   dx *= dashModifier;
+   dy *= dashModifier;
+   dashLevel -= dashRate;
+   if dashLevel = 0 {
+      dashCool = 20;
+   }
+}   
+else {
+   dashLevel += dashRate/2;
+   if dashCool &gt; 0 {
+     dashCool -= 1;
+   }
+}
    
 if(place_free(x+dx, y)){
    x += dx;
@@ -180,6 +226,87 @@ mySword.y = y;
           <argument>
             <kind>1</kind>
             <string>COLLISION</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>714</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_life_images</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
+          </argument>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_me_d</sprite>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>Health:</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>5</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(dashLevel &lt; 100){
+   draw_healthbar_circular(x, y, sprite_width, 0, dashLevel, spr_staminabar);
+}
+</string>
           </argument>
         </arguments>
       </action>
