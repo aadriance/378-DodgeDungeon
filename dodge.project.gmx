@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\Draw Sprite along Path</extension>
+    <extension index="1">extensions\Circular Healthbar</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_walk</sound>
@@ -35,6 +36,7 @@
       <sprite>sprites\spr_bullet_blue</sprite>
       <sprite>sprites\spr_bullet_dark</sprite>
     </sprites>
+    <sprite>sprites\spr_staminabar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -51,6 +53,7 @@
       <script>scripts\startGrapple.gml</script>
     </scripts>
     <script>scripts\getPreviousRoom.gml</script>
+    <script>scripts\draw_healthbar_circular.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
