@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction = obj_enemy.image_angle;
+            <string>direction = 0;
 speed = 10;
 
 minspeed = 0;

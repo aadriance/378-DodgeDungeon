@@ -61,7 +61,6 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
     <object>objects\obj_basicbullet</object>
-    <object>objects\object7</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

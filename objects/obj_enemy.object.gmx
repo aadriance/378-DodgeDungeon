@@ -147,10 +147,11 @@ if (hasTarget) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bull = instance_create(obj_enemy.x, obj_enemy.y, obj_basicbullet);
+            <string>bull = instance_create(x, y, obj_basicbullet);
         bull.speed = 7;
         bull.sprite_index = spr_bullet_blue;
         bull.numBounces = 2;
+        bull.direction = image_angle;
 </string>
           </argument>
         </arguments>
