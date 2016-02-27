@@ -115,7 +115,11 @@ if (hasTarget) {
     if (canShoot) {
         canShoot = false;
         alarm[1] = shootRate;
-        instance_create(obj_enemy.x, obj_enemy.y, obj_basicbullet);
+        
+        bull = instance_create(obj_enemy.x, obj_enemy.y, obj_basicbullet);
+        bull.speed = 7;
+        bull.sprite_index = spr_bullet_blue;
+        bull.numBounces = 2;
     }
 
     

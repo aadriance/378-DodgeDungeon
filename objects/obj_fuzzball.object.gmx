@@ -103,6 +103,7 @@ if(count == 10){
     bull.minspd = 0;
     bull.ttl = 50;
     bull.sprite_index = spr_bullet_dark;
+    
     count = 0;
 }
 

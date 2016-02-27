@@ -31,6 +31,8 @@
     </sprites>
     <sprites name="bullets">
       <sprite>sprites\spr_bullet_red</sprite>
+      <sprite>sprites\spr_bullet_green</sprite>
+      <sprite>sprites\spr_bullet_blue</sprite>
       <sprite>sprites\spr_bullet_dark</sprite>
     </sprites>
   </sprites>
@@ -54,6 +56,7 @@
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_fuzzball</object>
+    <object>objects\obj_plant</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
     <object>objects\obj_basicbullet</object>
