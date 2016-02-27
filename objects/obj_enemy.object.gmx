@@ -31,7 +31,8 @@ shootRate = 15;
 detectionRange = 500;
 alarm[0] = updateRate
 alarm[1] = shootRate
-canShoot = true;
+canShoot = false;
+maxturnspeed = 20;
 </string>
           </argument>
         </arguments>
@@ -120,15 +121,8 @@ if (hasTarget) {
         event_user(0);
     }
     
-    //if (angle - image_angle &lt; 20) {
-       image_angle = angle;
-    /*}
-    else if (image_angle &lt; angle) {
-       image_angle += 10;
-    }
-    else if (image_angle &gt; angle){
-       image_angle -= 10;
-    }*/
+    image_angle-=lengthdir_y(maxturnspeed,angle-image_angle)
+    direction = image_angle 
 }
 
 </string>
