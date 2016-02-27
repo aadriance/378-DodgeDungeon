@@ -45,6 +45,7 @@
       <script>scripts\draw_grappling.gml</script>
       <script>scripts\startGrapple.gml</script>
     </scripts>
+    <script>scripts\getPreviousRoom.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -56,9 +57,9 @@
     <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room0</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\bullet_test</room>
-    <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
   </rooms>
