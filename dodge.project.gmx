@@ -3,10 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\Draw Sprite along Path</extension>
-    <extension index="1">extensions\Circular Healthbar</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_walk</sound>
     <sound>sound\snd_sword</sound>
