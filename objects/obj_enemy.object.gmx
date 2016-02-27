@@ -115,7 +115,7 @@ if (hasTarget) {
     if (canShoot) {
         canShoot = false;
         alarm[1] = shootRate;
-        instance_create(obj_enemy.x, obj_enemy.y, obj_bullet);
+        instance_create(obj_enemy.x, obj_enemy.y, obj_basicbullet);
     }
 
     
