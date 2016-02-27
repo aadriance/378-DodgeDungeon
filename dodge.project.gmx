@@ -6,7 +6,10 @@
   <NewExtensions>
     <extension index="0">extensions\Draw Sprite along Path</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_walk</sound>
+    <sound>sound\snd_sword</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_playerMask</sprite>
@@ -26,6 +29,7 @@
       <sprite>sprites\spr_me_r</sprite>
       <sprite>sprites\spr_me_u</sprite>
     </sprites>
+    <sprite>sprites\spr_bullet_test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -46,12 +50,15 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_fuzzball</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\gideonRoom</room>
+    <room>rooms\bullet_test</room>
+    <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
   </rooms>
