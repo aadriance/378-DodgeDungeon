@@ -61,6 +61,7 @@ sprite = "red";
             <string>if(speed &gt; minspeed &amp;&amp; speed &lt; maxspeed){
     speed += accel;
 }
+
 if(speed &lt; minspeed){
     speed = minspeed;
 }
