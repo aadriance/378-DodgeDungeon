@@ -63,8 +63,13 @@
     <object>objects\obj_basicbullet</object>
     <object>objects\obj_sunburst</object>
     <object>objects\obj_sunburst_bull</object>
+    <object>objects\obj_spiral_cw</object>
+    <object>objects\obj_spiral_ccw</object>
+    <object>objects\obj_spiral_bull</object>
+    <object>objects\obj_shotgun</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\zigzag_room</room>
     <room>rooms\bullet_test</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\room0</room>
