@@ -64,20 +64,26 @@
     <object>objects\obj_basicbullet</object>
     <object>objects\obj_sunburst</object>
     <object>objects\obj_sunburst_bull</object>
-    <object>objects\obj_spiral_cw</object>
-    <object>objects\obj_spiral_ccw</object>
     <object>objects\obj_spiral_bull</object>
-    <object>objects\obj_shotgun</object>
     <objects name="enemies">
       <object>objects\obj_plant</object>
       <object>objects\obj_crystal</object>
       <object>objects\obj_fuzzball</object>
     </objects>
+    <objects name="bullet patterns">
+      <object>objects\obj_shotgun</object>
+      <object>objects\obj_spiral_cw</object>
+      <object>objects\obj_spiral_ccw</object>
+      <object>objects\obj_multispiral_cw</object>
+      <object>objects\obj_multispiral_ccw</object>
+      <object>objects\obj_complex_rose</object>
+      <object>objects\obj_simple_rose</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\bullet_test</room>
     <room>rooms\zigzag_room</room>
     <room>rooms\gideonRoom</room>
-    <room>rooms\bullet_test</room>
     <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
