@@ -20,6 +20,8 @@
     <sprites name="enemies">
       <sprite>sprites\spr_fuzzball</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
+      <sprite>sprites\spr_fuzz3</sprite>
+      <sprite>sprites\spr_fuzz2</sprite>
     </sprites>
     <sprites name="spr_me">
       <sprite>sprites\spr_me_d</sprite>
@@ -34,6 +36,7 @@
       <sprite>sprites\spr_bullet_dark</sprite>
     </sprites>
     <sprite>sprites\spr_staminabar</sprite>
+    <sprite>sprites\spr_crystal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -56,8 +59,6 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_fuzzball</object>
-    <object>objects\obj_plant</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
     <object>objects\obj_basicbullet</object>
@@ -67,11 +68,16 @@
     <object>objects\obj_spiral_ccw</object>
     <object>objects\obj_spiral_bull</object>
     <object>objects\obj_shotgun</object>
+    <objects name="enemies">
+      <object>objects\obj_plant</object>
+      <object>objects\obj_crystal</object>
+      <object>objects\obj_fuzzball</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\zigzag_room</room>
-    <room>rooms\bullet_test</room>
     <room>rooms\gideonRoom</room>
+    <room>rooms\bullet_test</room>
     <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
