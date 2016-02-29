@@ -53,7 +53,7 @@ image_speed = 0.2;
             <string>count += 1;
 
 if (count == 40) {
-    num = 15;
+    num = 20;
     for (i = 0; i &lt; num; i += 1) {
         bull = instance_create(x, y, obj_sunburst_bull);
         bull.direction = 360 * i/num;
@@ -61,6 +61,7 @@ if (count == 40) {
         bull.accel = 0.5;
         bull.maxSpeed = 8;
         bull.sprite_index = spr_bullet_green;  
+        count = 0;
     }
 }
 
@@ -68,13 +69,12 @@ if (count == 40) {
 if (count == 80) {
     burstNum = 3;
     for (i = 0; i &lt; burstNum; i += 1) {
-        bull = instance_create(x, y, obj_sunburst_bull);
-        bull.direction = 60 * i/burstNum;
+        bull = instance_create(x, y, obj_spiral_bull);
+        bull.direction = 30 * i/burstNum;
         bull.speed = 2;
-        bull.accel = 0.3;
+        bull.accel = 0.5;
         bull.maxSpeed = 6;
-        bull.sprite_ndex = spr_bullet_blue;
-        count = 0;
+        bull.sprite_index = spr_bullet_blue;
     }
 }
 </string>
