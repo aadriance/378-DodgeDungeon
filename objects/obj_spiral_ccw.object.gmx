@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_spiral_cw</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rotateAngle = 18;
-image_angle = 90;
-curBullet = 0;
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
@@ -50,11 +48,9 @@ curBullet = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>numBullets = 40;
-curBullet += 1;
-if (curBullet &lt; numBullets) {
+            <string>if (curBullet &lt; numBullets) {
     bull = instance_create(x, y, obj_basicbullet);
-    bull.direction = image_angle - rotateAngle * curBullet;
+    bull.direction = 0 - rotateAngle * curBullet;
     bull.speed = 1;
     bull.accel = 0.05;
     bull.angVelocity = -1.2;
@@ -62,7 +58,9 @@ if (curBullet &lt; numBullets) {
     bull.sprite_index = spr_bullet_blue;   
 }
 
-if (curBullet &gt; 60) {
+curBullet += 1;
+
+if (curBullet &gt; pauseDelay) {
     curBullet = 0;
 }
 </string>

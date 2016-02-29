@@ -25,11 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rotateAngle = 15;
+            <string>rotateAngle = 1;               
 image_angle = 90;
-curBullet = 0;
-numBullets = 180;
-pauseDelay = 240;
+curBullet = 0;                 
+bulletSpacing = 2;
+numBullets = 180;               
+pauseDelay = 240;    
+bulletAngle = 4.8;
 </string>
           </argument>
         </arguments>
@@ -52,14 +54,62 @@ pauseDelay = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (curBullet &lt; numBullets) {
-    bull = instance_create(x, y, obj_spiral_bull);
-    bull.direction = rotateAngle * curBullet;
-    bull.speed = 1;
-    bull.accel = 0.05;
-    bull.angVelocity = 1.2;
-    bull.maxSpeed = 1.1;
-    bull.sprite_index = spr_bullet_green;   
+            <string>if (curBullet &lt; numBullets &amp;&amp; curBullet % bulletSpacing == 0) {
+    arm1 = instance_create(x - 1, y, obj_spiral_bull);
+    arm2 = instance_create(x + 1, y + 1, obj_spiral_bull);
+    arm3 = instance_create(x + 1, y, obj_spiral_bull);
+    arm4 = instance_create(x, y - 1, obj_spiral_bull);
+    
+    arm5 = instance_create(x - 1, y + 1, obj_sunburst_bull);
+    arm6 = instance_create(x + 1, y + 1, obj_sunburst_bull);
+    arm7 = instance_create(x + 1, y - 1, obj_sunburst_bull);
+    arm8 = instance_create(x - 1, y - 1, obj_sunburst_bull);
+    
+    arm1.direction = 0 + rotateAngle * curBullet;
+    arm2.direction = 90 + rotateAngle * curBullet;
+    arm3.direction = 180 + rotateAngle * curBullet;
+    arm4.direction = 270 + rotateAngle * curBullet;
+    
+    arm5.direction = 45 - rotateAngle * curBullet;
+    arm6.direction = 135 - rotateAngle * curBullet;
+    arm7.direction = 225 - rotateAngle * curBullet;
+    arm8.direction = 315 - rotateAngle * curBullet;
+    
+    arm1.speed = 1;
+    arm2.speed = 1;
+    arm3.speed = 1;
+    arm4.speed = 1;
+    arm5.speed = 1;
+    arm6.speed = 1;
+    arm7.speed = 1;
+    arm8.speed = 1;
+    
+    arm1.angVelocity = bulletAngle;
+    arm2.angVelocity = bulletAngle;
+    arm3.angVelocity = bulletAngle;
+    arm4.angVelocity = bulletAngle;
+    arm5.angVelocity = -bulletAngle;
+    arm6.angVelocity = -bulletAngle;
+    arm7.angVelocity = -bulletAngle;
+    arm8.angVelocity = -bulletAngle;
+        
+    arm1.accel = 0.5;
+    arm2.accel = 0.5;
+    arm3.accel = 0.5;
+    arm4.accel = 0.5;
+    arm5.accel = 0.5;
+    arm6.accel = 0.5;
+    arm7.accel = 0.5;
+    arm8.accel = 0.5;
+    
+    arm1.maxSpeed = 1.5;
+    arm2.maxSpeed = 1.5;
+    arm3.maxSpeed = 1.5;
+    arm4.maxSpeed = 1.5;
+    arm5.maxSpeed = 1.5;
+    arm6.maxSpeed = 1.5;
+    arm7.maxSpeed = 1.5;
+    arm8.maxSpeed = 1.5;
 }
 
 curBullet += 1;
