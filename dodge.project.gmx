@@ -17,6 +17,7 @@
     <sprite>sprites\spr_chain</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_crystal</sprite>
     <sprites name="enemies">
       <sprite>sprites\spr_fuzzball</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
@@ -36,7 +37,6 @@
       <sprite>sprites\spr_bullet_dark</sprite>
     </sprites>
     <sprite>sprites\spr_staminabar</sprite>
-    <sprite>sprites\spr_crystal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -81,9 +81,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\gideonRoom</room>
     <room>rooms\bullet_test</room>
     <room>rooms\zigzag_room</room>
-    <room>rooms\gideonRoom</room>
     <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>

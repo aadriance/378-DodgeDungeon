@@ -30,6 +30,10 @@
 count = 0;
 
 image_speed = 0.2;
+
+xBound = 100;
+yBound = 100;
+
 </string>
           </argument>
         </arguments>
@@ -78,6 +82,37 @@ if(count == 60){
     count = 0;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+movecount += 1;
+
+if(movecount &gt;= 120){
+    xDest = random_range(xBound, room_width-xBound);
+    yDest = random_range(yBound, room_height-yBound);
+    move_towards_point(xDest, yDest, baseSpd);
+}
+if(distance_to_point(xDest, yDest) &lt; 5){
+    movecount = 0;
+}
 </string>
           </argument>
         </arguments>
