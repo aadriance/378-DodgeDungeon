@@ -59,9 +59,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
-    <object>objects\obj_basicbullet</object>
     <object>objects\obj_sunburst</object>
     <object>objects\obj_sunburst_bull</object>
     <object>objects\obj_spiral_cw</object>
@@ -72,13 +70,17 @@
       <object>objects\obj_plant</object>
       <object>objects\obj_crystal</object>
       <object>objects\obj_fuzzball</object>
+      <object>objects\obj_enemy</object>
+    </objects>
+    <objects name="bullets">
+      <object>objects\obj_basicbullet</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\zigzag_room</room>
     <room>rooms\gideonRoom</room>
-    <room>rooms\bullet_test</room>
     <room>rooms\room0</room>
+    <room>rooms\bullet_test</room>
+    <room>rooms\zigzag_room</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
   </rooms>
