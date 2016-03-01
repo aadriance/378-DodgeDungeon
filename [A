@@ -1,0 +1,431 @@
+[33mcommit bc48fe54ea0dc4d2dae65d426a465ad04a259baf[m
+Merge: 7fac424 232c172
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Mon Feb 29 16:13:56 2016 -0800
+
+    work in lab today
+
+[33mcommit 7fac424e8a8f22caa275ba2dd5fdb677413e7e5a[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Mon Feb 29 16:13:00 2016 -0800
+
+    work in lab today
+
+[33mcommit 232c17248117fc1be685a87ac301481c14d85d21[m
+Merge: 2afbf1f 19379da
+Author: Kevin Hongtongsak <khongtongsak@hotmail.com>
+Date:   Mon Feb 29 11:05:53 2016 -0800
+
+    Merge pull request #11 from aadriance/kevin-branch
+    
+    Added more bullet patterns
+
+[33mcommit 19379daa3f09e2c7261d970dfa4bbda3bfc06ec9[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Mon Feb 29 11:04:19 2016 -0800
+
+    Added more bullet patterns
+    
+    Moved bullet patterns into their own object folder to clean up project
+    hierarchy. Bullet patterns can be formed by stacking simpler ones on top
+    of each other (like in bullet_test room)
+
+[33mcommit e09deac8e289108e014f1f0ddee8028373ece5be[m
+Merge: 9414339 2afbf1f
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Mon Feb 29 09:31:46 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into kevin-branch
+
+[33mcommit 2afbf1f22618847d9bb51986ba2065ce4d54b1fa[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Mon Feb 29 01:17:03 2016 -0800
+
+    more fuzzball sprites
+
+[33mcommit 34dbee63f7cd65abf0f8d8767e020fe70b80ece7[m
+Merge: 7a0cbd0 9414339
+Author: Kevin Hongtongsak <khongtongsak@hotmail.com>
+Date:   Sun Feb 28 17:45:26 2016 -0800
+
+    Merge pull request #10 from aadriance/kevin-branch
+    
+    Added new bullet patterns and mock room design
+
+[33mcommit 7a0cbd0e0e45af5cd084e1734af9400d3c1c21f1[m
+Merge: b62c983 460390c
+Author: Kevin Hongtongsak <khongtongsak@hotmail.com>
+Date:   Sun Feb 28 17:43:33 2016 -0800
+
+    Merge pull request #9 from aadriance/kevin-branch
+    
+    Edited sound/ two simple patterns
+
+[33mcommit 941433957765f7cd086255352b0003b01a94fc2b[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Sun Feb 28 17:43:04 2016 -0800
+
+    Added new bullet patterns and a mock level design
+    
+    Level design is meant to funnel players through a set of enemies. Bullet
+    patterns are just clockwise and counterclockwise spiral patterns.
+
+[33mcommit 460390ca30d9679e82e8db5cb5ba942a9df22ccb[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Sat Feb 27 19:29:42 2016 -0800
+
+    Edited footstep sound/some bullet patterns
+    
+    Added a simple sunburst and a shotgun-like burst
+
+[33mcommit dd2d70767119c39a66557b78709cc78a015d5eaf[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Sat Feb 27 18:48:25 2016 -0800
+
+    Made sound softer and more repeated
+
+[33mcommit b1e4ff08570394e429b4af90caa3d80b86eeebf1[m
+Merge: 09945ce b62c983
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Sat Feb 27 17:56:48 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into kevin-branch
+
+[33mcommit b62c9834cdccf04f72e0edc0b28cf65fbc66d64a[m
+Merge: 75636f8 413c451
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 12:16:09 2016 -0800
+
+    Merge pull request #8 from aadriance/Andrew
+    
+    Health and stamina
+
+[33mcommit 413c4517ceda8eddef3a69baf273f8947d573163[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 12:16:38 2016 -0800
+
+    clean up
+
+[33mcommit e155f1139a2642f5ca6600da996cae53b55bec4d[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 12:16:22 2016 -0800
+
+    file clean up
+
+[33mcommit bca7e6c420974484d1b3939acf05c599c606ec49[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 12:15:32 2016 -0800
+
+    Dashing and health
+
+[33mcommit 09945ce0f65022cf50dec566ca6f5bcdb5737155[m
+Merge: 6bca67b 75636f8
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Sat Feb 27 11:42:47 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into kevin-branch
+
+[33mcommit f1673bc5b09464a1a4a1cb968b9b4db443d17908[m
+Merge: 957950a 75636f8
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 11:31:17 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Andrew
+
+[33mcommit 957950aa4f497fa65c32667df7d00bd132b5b43c[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 11:31:01 2016 -0800
+
+    Particles for fun
+
+[33mcommit 75636f8474b7bf42aaa69b7d879040c2a34dd38d[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Sat Feb 27 11:19:17 2016 -0800
+
+    quick fixes for red circle enemy
+
+[33mcommit dd88a2d301c743ee27c4752d2897a42a07957641[m
+Merge: 764da30 7ad2e54
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 11:12:52 2016 -0800
+
+    Merge pull request #7 from aadriance/Andrew
+    
+    Enemy and player updates
+
+[33mcommit 7ad2e54486bfccd3916cb3e26ac80d4df3b1f54a[m
+Merge: 3b2200e 764da30
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 11:09:19 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Andrew
+    
+    Merged with gideons stuff
+
+[33mcommit 764da30d40d7ffaaa4c5a72965d75d62806708cf[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Sat Feb 27 11:03:15 2016 -0800
+
+    basicbullet type
+
+[33mcommit 3b2200e57e5b253519a3c8bf5bca770b89111242[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 11:01:06 2016 -0800
+
+    Improved Player Collision
+    
+    Player can now get pixel to pixel with other objects without issues
+
+[33mcommit c0b685b70398dbf58282d54b12f77e3f3542917f[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 10:56:11 2016 -0800
+
+    Enemy smooth turn
+    
+    Enemies now turn smoothly to face the player
+
+[33mcommit f5ade3fe0c62b25b622a5ebc75e766af8351bd33[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 10:51:43 2016 -0800
+
+    Enemy Refactor
+    
+    Made detectionRange a variable so that enemy awerness range can be
+    changed.
+    
+    Put shoot code into user derfined 0.  Use that for bullet creation code.
+
+[33mcommit d1db3c4e7066c994aeafdd709804c2d2a85f315b[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Sat Feb 27 10:39:16 2016 -0800
+
+    basicbullet type
+
+[33mcommit cc706a92de44dff0321366fa99b843f1e2dbfcbb[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 10:34:52 2016 -0800
+
+    Random room changes
+    
+    Added a way to get the previous room so that random rooms can be more
+    than 1 deep
+    
+    Made the player persistant.  Do not add the player to more than one
+    room, he will appear in the next room automatically.
+
+[33mcommit 7beff8b48766fc6b8bbae3c9df4501535088276a[m
+Merge: 24dfd16 a181575
+Author: aadriance <aadriance@icloud.com>
+Date:   Sat Feb 27 10:20:23 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Andrew
+
+[33mcommit a1815754bb0e4a8703bd6b9a9f171fdd403da8b7[m
+Merge: 7a05b1b 6bca67b
+Author: Kevin Hongtongsak <khongtongsak@hotmail.com>
+Date:   Fri Feb 26 11:38:03 2016 -0800
+
+    Merge pull request #6 from aadriance/kevin-branch
+    
+    Prototype of simple homing bullets
+
+[33mcommit 6bca67b5d29a327ca199358a10d969b40a31b101[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Fri Feb 26 10:44:01 2016 -0800
+
+    Prototype of simple enemy shooting
+    
+    Added delay between each bullet fired
+
+[33mcommit 46ba63011987b2c7c4d289950fffc694e799beb0[m
+Merge: 1337aa7 7a05b1b
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Fri Feb 26 10:31:29 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into kevin-branch
+
+[33mcommit 1337aa73aa1230e8493258184823065f215b1a1d[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Fri Feb 26 10:29:35 2016 -0800
+
+    Testing bullet spawn
+    
+    Bullets spawn from enemies and face the same direction as they do
+
+[33mcommit 7a05b1b34060df2fd21c5f3ec47b0e487571a897[m
+Merge: 0439e9a 241a434
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Thu Feb 25 17:31:49 2016 -0800
+
+    Merge branch 'master' of https://github.com/aadriance/378_dodge into Gideon
+
+[33mcommit 0439e9a85a094b733153b0cc4565f74bd4f55f8a[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Thu Feb 25 17:30:44 2016 -0800
+
+    enemy chases and bounces and stuff
+
+[33mcommit 241a43443eeb3066896eec7a2a1e874481941b8f[m
+Merge: 7db4ddd 698a223
+Author: Kevin Hongtongsak <khongtongsak@hotmail.com>
+Date:   Thu Feb 25 08:41:41 2016 -0800
+
+    Merge pull request #5 from aadriance/kevin-branch
+    
+    Added basic SFX
+
+[33mcommit 698a223ae557b806085f49c3b71da94999a3254c[m
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Thu Feb 25 08:39:08 2016 -0800
+
+    Added footsteps and sword swinging sound
+    
+    Basic footstep and sword swooshing SFX.
+
+[33mcommit 66793f1ad537bb4e2348b14f6e793431d7a7f8fb[m
+Merge: c3939ec 7db4ddd
+Author: khongton <khongtongsak@hotmail.com>
+Date:   Thu Feb 25 07:37:16 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into kevin-branch
+
+[33mcommit 7db4ddd7ad03292b430824352b8545c9246f9a1d[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Thu Feb 25 00:58:55 2016 -0800
+
+    player animation speed fix
+
+[33mcommit 3c10b736b697c1f171759decfc0cb1bd66b1a710[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Thu Feb 25 00:48:05 2016 -0800
+
+    additional frame for player walking. fixed walls in Gideon room
+
+[33mcommit 24dfd165f0888a17735b5f7c12d04c4712e90dac[m
+Merge: f3a1855 e9d8a30
+Author: aadriance <aadriance@icloud.com>
+Date:   Thu Feb 25 00:00:00 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Andrew
+
+[33mcommit f65fabdfcbc11b0058ba44ca791e8a0228d02a8b[m
+Merge: e9d8a30 24dfd16
+Author: aadriance <aadriance@icloud.com>
+Date:   Wed Feb 24 23:59:59 2016 -0800
+
+    Merge pull request #4 from aadriance/Andrew
+    
+    added in player image and sliding along wall
+
+[33mcommit f3a1855e09a24bf4e6072c5bca2712984999dd52[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Wed Feb 24 23:59:08 2016 -0800
+
+    Added in player image and wall sliding
+
+[33mcommit efa9c5f8dc8b7871b8839a2f1e09b4b747323a52[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Wed Feb 24 23:29:27 2016 -0800
+
+    misc changes
+
+[33mcommit e9d8a30a2e3b7c14c38dc1e284d60854ae2154ce[m
+Merge: e39a7ad 1be6f91
+Author: aadriance <aadriance@icloud.com>
+Date:   Wed Feb 24 23:27:48 2016 -0800
+
+    Merge pull request #3 from aadriance/Andrew
+    
+    Random door and basic enemy
+
+[33mcommit 1be6f9118b71920000b446350cc8cae115b8894d[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Wed Feb 24 22:47:36 2016 -0800
+
+    Added random door
+
+[33mcommit 973b01d539fdd630371efae9aaafc878787313d7[m
+Merge: 9b4a3b4 e39a7ad
+Author: aadriance <aadriance@icloud.com>
+Date:   Wed Feb 24 22:29:16 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into Andrew
+    
+    # Conflicts:
+    #	dodge.project.gmx
+
+[33mcommit e39a7ad7f36b9f23d4e65e99c2613eb216e07655[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Wed Feb 24 14:22:01 2016 -0800
+
+    room revision. player sprite
+
+[33mcommit b72000fbaa19d9120691fe51cc4d2ab1acd00ca7[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Tue Feb 23 21:19:09 2016 -0800
+
+    some sprites
+
+[33mcommit 9b4a3b48ba4aba04934f65517557d0181f5d9e8b[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Tue Feb 23 19:15:22 2016 -0800
+
+    Added basic enemy
+
+[33mcommit c3939ecab596073e94e661487721289e3533aedc[m
+Merge: 5d0e6d0 b13dd08
+Author: aadriance <aadriance@icloud.com>
+Date:   Tue Feb 23 18:36:35 2016 -0800
+
+    Merge pull request #2 from aadriance/Andrew
+    
+    Added Walls
+
+[33mcommit 5d0e6d07869a44f3b40cba0da9f792ea50ddf134[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Tue Feb 23 18:34:40 2016 -0800
+
+    Revert "walls added. new movement code for better collision detection"
+    
+    This reverts commit 9d9768fbaf0adb65c7cc84eeb3f49c4b0683efd8.
+
+[33mcommit b13dd081f281a34f4d882e051b4a00ef7211cfd9[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Tue Feb 23 18:26:59 2016 -0800
+
+    Added Walls
+    
+    Walls in game
+
+[33mcommit 9d9768fbaf0adb65c7cc84eeb3f49c4b0683efd8[m
+Author: Gideon <kc.gideonw@gmail.com>
+Date:   Tue Feb 23 17:44:35 2016 -0800
+
+    walls added. new movement code for better collision detection
+
+[33mcommit 13d79425b84460c4c97840f2d6562b83854863bf[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Mon Feb 22 21:25:32 2016 -0800
+
+    Added basic grapple
+
+[33mcommit 4cf021889fe93cdbefaa76126189934b45db6244[m
+Merge: d55245f 13d7942
+Author: aadriance <aadriance@icloud.com>
+Date:   Mon Feb 22 21:25:23 2016 -0800
+
+    Merge pull request #1 from aadriance/Andrew
+    
+    Added basic grapple
+
+[33mcommit d55245fdc8e61b5b7d58fa17267b5c40dfb0e3d6[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Mon Feb 22 19:28:40 2016 -0800
+
+    Initial Project Commit
+
+[33mcommit eeaa0c0b9ec9204e10c56a9233b5c3ce435a3ec1[m
+Author: aadriance <aadriance@icloud.com>
+Date:   Mon Feb 22 19:27:15 2016 -0800
+
+    :octocat: Added .gitattributes & .gitignore files
