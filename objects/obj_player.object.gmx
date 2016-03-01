@@ -193,7 +193,7 @@ if (abs(dx) + abs(dy) != 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(vk_space) &amp;&amp; !mySword.inUse {
+            <string>if keyboard_check_pressed(ord('Z')) &amp;&amp; !mySword.inUse {
    audio_play_sound(snd_sword, 0, 0);
    swingSword(mySword);
 }
