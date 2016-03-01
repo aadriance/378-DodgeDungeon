@@ -17,9 +17,12 @@
     <sprite>sprites\spr_chain</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_crystal</sprite>
     <sprites name="enemies">
       <sprite>sprites\spr_fuzzball</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
+      <sprite>sprites\spr_fuzz3</sprite>
+      <sprite>sprites\spr_fuzz2</sprite>
     </sprites>
     <sprites name="spr_me">
       <sprite>sprites\spr_me_d</sprite>
@@ -56,16 +59,32 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_fuzzball</object>
-    <object>objects\obj_plant</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
     <object>objects\obj_basicbullet</object>
+    <object>objects\obj_sunburst</object>
+    <object>objects\obj_sunburst_bull</object>
+    <object>objects\obj_spiral_bull</object>
+    <objects name="enemies">
+      <object>objects\obj_plant</object>
+      <object>objects\obj_crystal</object>
+      <object>objects\obj_fuzzball</object>
+    </objects>
+    <objects name="bullet patterns">
+      <object>objects\obj_shotgun</object>
+      <object>objects\obj_spiral_cw</object>
+      <object>objects\obj_spiral_ccw</object>
+      <object>objects\obj_multispiral_cw</object>
+      <object>objects\obj_multispiral_ccw</object>
+      <object>objects\obj_complex_rose</object>
+      <object>objects\obj_simple_rose</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\gideonRoom</room>
     <room>rooms\bullet_test</room>
+    <room>rooms\gideonRoom</room>
+    <room>rooms\zigzag_room</room>
+    <room>rooms\room0</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
   </rooms>
