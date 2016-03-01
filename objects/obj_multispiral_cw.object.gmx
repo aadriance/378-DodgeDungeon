@@ -25,11 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rotateAngle = 15;
+            <string>rotateAngle = 15;               
 image_angle = 90;
-curBullet = 0;
-numBullets = 180;
-pauseDelay = 240;
+curBullet = 0;                 
+bulletSpacing = 2;
+numBullets = 50;               
+pauseDelay = numBullets * 2;    
+
 </string>
           </argument>
         </arguments>
@@ -52,14 +54,36 @@ pauseDelay = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (curBullet &lt; numBullets) {
-    bull = instance_create(x, y, obj_spiral_bull);
-    bull.direction = rotateAngle * curBullet;
-    bull.speed = 1;
-    bull.accel = 0.05;
-    bull.angVelocity = 1.2;
-    bull.maxSpeed = 1.1;
-    bull.sprite_index = spr_bullet_green;   
+            <string>if (curBullet &lt; numBullets &amp;&amp; curBullet % bulletSpacing == 0) {
+    arm1 = instance_create(x + 1, y, obj_spiral_bull);
+    arm2 = instance_create(x - 1, y, obj_spiral_bull);
+    arm3 = instance_create(x, y + 1, obj_spiral_bull);
+    arm4 = instance_create(x, y - 1, obj_spiral_bull);
+    
+    arm1.direction = 0 + rotateAngle * curBullet;
+    arm2.direction = 90 + rotateAngle * curBullet;
+    arm3.direction = 180 + rotateAngle * curBullet;
+    arm4.direction = 270 + rotateAngle * curBullet;
+    
+    arm1.speed = 1;
+    arm2.speed = 1;
+    arm3.speed = 1;
+    arm4.speed = 1;
+
+    arm1.angVelocity = 3.6;
+    arm2.angVelocity = 3.6;
+    arm3.angVelocity = 3.6;
+    arm4.angVelocity = 3.6;
+        
+    arm1.accel = 0.5;
+    arm2.accel = 0.5;
+    arm3.accel = 0.5;
+    arm4.accel = 0.5;
+    
+    arm1.maxSpeed = 1.5;
+    arm2.maxSpeed = 1.5;
+    arm3.maxSpeed = 1.5;
+    arm4.maxSpeed = 1.5;
 }
 
 curBullet += 1;
