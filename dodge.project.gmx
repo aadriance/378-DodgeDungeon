@@ -89,10 +89,10 @@
     <object>objects\obj_basicBulletEmitter</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\bullet_test</room>
     <room>rooms\dgn1_boss</room>
     <room>rooms\dgn1_crystals_lasers</room>
     <room>rooms\dgn1_crystals_fast</room>
-    <room>rooms\bullet_test</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\dgn1_fuzzballs</room>
     <room>rooms\room0</room>
