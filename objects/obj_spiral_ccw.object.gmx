@@ -51,10 +51,10 @@
             <string>if (curBullet &lt; numBullets) {
     bull = instance_create(x, y, obj_basicbullet);
     bull.direction = 0 - rotateAngle * curBullet;
-    bull.speed = 1;
-    bull.accel = 0.05;
-    bull.angVelocity = -1.2;
-    bull.maxSpeed = 1.1;
+    bull.speed = bullSpeed;
+    bull.accel = 0;
+    bull.angVelocity = 0;
+    bull.maxSpeed = bullSpeed;
     bull.sprite_index = spr_bullet_blue;   
 }
 
