@@ -89,16 +89,20 @@
     <object>objects\obj_basicBulletEmitter</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\bullet_test</room>
-    <room>rooms\dgn1_boss</room>
-    <room>rooms\dgn1_crystals_lasers</room>
-    <room>rooms\dgn1_crystals_fast</room>
-    <room>rooms\gideonRoom</room>
-    <room>rooms\dgn1_fuzzballs</room>
-    <room>rooms\room0</room>
-    <room>rooms\zigzag_room</room>
-    <room>rooms\rand1</room>
-    <room>rooms\rand2</room>
+    <rooms name="dgn1">
+      <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_boss</room>
+      <room>rooms\dgn1_crystals_fast</room>
+      <room>rooms\dgn1_fuzzballs</room>
+    </rooms>
+    <rooms name="test1">
+      <room>rooms\room0</room>
+      <room>rooms\rand2</room>
+      <room>rooms\zigzag_room</room>
+      <room>rooms\gideonRoom</room>
+      <room>rooms\bullet_test</room>
+      <room>rooms\rand1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
