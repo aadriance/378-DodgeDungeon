@@ -78,6 +78,7 @@
     </objects>
     <objects name="bullet patterns">
       <object>objects\obj_shotgun</object>
+      <object>objects\obj_single_whip</object>
       <object>objects\obj_spiral_cw</object>
       <object>objects\obj_spiral_ccw</object>
       <object>objects\obj_multispiral_cw</object>
@@ -89,6 +90,7 @@
     <object>objects\obj_basicBulletEmitter</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\gideonRoom</room>
     <rooms name="dgn1">
       <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_boss</room>
@@ -99,7 +101,7 @@
       <room>rooms\room0</room>
       <room>rooms\rand2</room>
       <room>rooms\zigzag_room</room>
-      <room>rooms\gideonRoom</room>
+      <room>rooms\room10</room>
       <room>rooms\bullet_test</room>
       <room>rooms\rand1</room>
     </rooms>

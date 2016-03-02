@@ -168,7 +168,7 @@
     <instance objName="obj_fuzzball" x="160" y="120" name="inst_B96176DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzball" x="160" y="120" name="inst_EB108391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plant" x="200" y="440" name="inst_E900DD86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_single_whip" x="200" y="240" name="inst_3A7A30DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_single_whip" x="160" y="240" name="inst_A8D5BAEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="0" w="40" h="40" xo="0" yo="0" id="10000001" name="inst_77DCA754" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
