@@ -74,6 +74,7 @@
       <object>objects\obj_fuzzball</object>
       <object>objects\fuzzSpawner1</object>
       <object>objects\obj_crystal_emitter</object>
+      <object>objects\obj_dgn1_boss</object>
     </objects>
     <objects name="bullet patterns">
       <object>objects\obj_shotgun</object>
@@ -83,16 +84,18 @@
       <object>objects\obj_multispiral_ccw</object>
       <object>objects\obj_complex_rose</object>
       <object>objects\obj_simple_rose</object>
+      <object>objects\obj_whiplash</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\dgn1_boss</room>
     <room>rooms\dgn1_crystals_lasers</room>
-    <room>rooms\gideonRoom</room>
     <room>rooms\dgn1_crystals_fast</room>
+    <room>rooms\bullet_test</room>
+    <room>rooms\gideonRoom</room>
     <room>rooms\dgn1_fuzzballs</room>
     <room>rooms\room0</room>
-    <room>rooms\bullet_test</room>
     <room>rooms\zigzag_room</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
