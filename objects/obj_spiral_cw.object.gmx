@@ -53,7 +53,7 @@ bullSpeed = 5;
           <argument>
             <kind>1</kind>
             <string>if (curBullet &lt; numBullets) {
-    bull = instance_create(x, y, obj_spiral_bull);
+    bull = instance_create(x, y, obj_basicbullet);
     bull.direction = rotateAngle * curBullet;
     bull.speed = bullSpeed;
     bull.accel = 0;
