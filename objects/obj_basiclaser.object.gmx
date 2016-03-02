@@ -27,21 +27,22 @@
             <kind>1</kind>
             <string>direction = 0;
 delay = 60;
-ttl = 120;          //time to live, including during inactivity
-angVelocity = 0;    //angle turning speed
-
-startWidth = 0.2;
+ttl = 70;               //time to live, including during inactivity
+angVelocity = 0;        //angle turning speed
+startWidth = 0.2;       //width when thin and inactive
 endWidth = 2;
 widthGrowRate = 5;      //time for width to reach max
-widthShrinkRate = 3; //time for width to die out
+widthShrinkRate = 3;    //time for width to die out
+radialDist = 0;         //distance from core
+
 image_yscale = startWidth;
 widthGrowth = (endWidth - startWidth)/widthGrowRate;
 widthShrink = (endWidth - startWidth)/widthShrinkRate;
 
 active = false;
 
-xNucleus = x;
-yNucleus = y;
+corex = x;
+corey = y;
 
 endx = x;
 endy = y;
@@ -72,6 +73,11 @@ init = true;
             <kind>1</kind>
             <string>if(init){
     image_angle = direction;
+
+    x = x+lengthdir_x(radialDist, direction);
+    y = y+lengthdir_y(radialDist, direction);
+    
+    //
     
     for(i = 0; i &lt; 1600; i+=1){
         if(place_free(endx, endy)){

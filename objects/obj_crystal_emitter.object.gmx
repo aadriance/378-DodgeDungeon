@@ -31,6 +31,9 @@ crystal = 0;
 
 num0 = 16;
 num1 = 4;
+num2 = 8;
+
+attackType = 0;     //this gets changed from the crystal object as necessary
 </string>
           </argument>
         </arguments>
@@ -62,6 +65,37 @@ num1 = 4;
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="12">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var p = instance_nearest(x, y, obj_player);
+var pdir = point_direction(x, y, p.x, p.y);
+
+for(i = 0; i &lt; num2; i += 1){
+    b = instance_create(x, y, obj_basicbullet);
+    b.sprite_index = spr_bullet_blue;
+    b.speed = 7;
+    b.direction = pdir + i * 360/num2;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="11">
       <action>
         <libid>1</libid>
@@ -82,12 +116,20 @@ num1 = 4;
             <string>for(i = 0; i &lt; num1; i += 1){
     b = instance_create(x, y, obj_basiclaser);
     b.sprite_index = spr_bullet_blue;
+    b.radialDist = 20;
     
     b.direction = i*360/num1;
     b.endWidth = 1.2;
     
     b.delay = 15;
-    b.ttl = 40;
+    b.ttl = 20;
+    
+    b = instance_create(x, y, obj_basicbullet);
+    b.sprite_index = spr_bullet_blue;
+    b.direction = i*360/num1;
+    b.speed = 0.5;
+    b.maxspeed = 8;
+    b.accel = 0.02;
 }
 </string>
           </argument>

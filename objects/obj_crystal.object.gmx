@@ -25,22 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 0;
-moverate = 30;
-stationaryTime = 80;
+            <string>moverate = 10;          //how much time it takes for movement
+stationaryTime = 30;    //how long stays still
+maxDist = 200;          //how far it can move
+attackType = 0;         //which emitter attack to use
 
+speed = 0;
+image_speed = 0.2;
 count = 0;
 movecount = 0;
 
-image_speed = 0.2;
 
 xBound = 100;
 yBound = 100;
-    xDest = random_range(xBound, room_width-xBound);
-    yDest = random_range(yBound, room_height-yBound);
+xDest = random_range(xBound, room_width-xBound);
+yDest = random_range(yBound, room_height-yBound);
 
-myEmitter = instance_create(x, y, obj_crystal_emitter1);
+myEmitter = instance_create(x, y, obj_crystal_emitter);
 myEmitter.crystal = id;
+myEmitter.attackType = attackType;
+
+starting = true;
 </string>
           </argument>
         </arguments>
@@ -66,16 +71,27 @@ myEmitter.crystal = id;
             <string>movecount += 1;
 
 if(movecount == stationaryTime/2){
-    with(myEmitter){
-        event_user(0);
-        event_user(1);
+    if(starting){
+        starting = false;
+    }else{
+        myEmitter.attackType = attackType;
+        with(myEmitter){
+            event_user(attackType);
+        }
     }
 }
 
 if(movecount == stationaryTime){
     xDest = random_range(xBound, room_width-xBound);
     yDest = random_range(yBound, room_height-yBound);
-    move_towards_point(xDest, yDest, distance_to_point(xDest, yDest)/moverate);
+    
+    //prevent from going way too far
+    var dist = distance_to_point(xDest, yDest);
+    if(dist &gt; maxDist){
+        dist = maxDist;
+    }
+    
+    move_towards_point(xDest, yDest, dist/moverate);
 }
 
 if(movecount == stationaryTime + moverate){
