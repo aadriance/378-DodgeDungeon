@@ -80,6 +80,7 @@
       <object>objects\obj_simple_rose</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
+    <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
@@ -88,6 +89,7 @@
     <room>rooms\zigzag_room</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
+    <room>rooms\rm_gameOver</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
