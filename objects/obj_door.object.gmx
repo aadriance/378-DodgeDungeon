@@ -54,7 +54,6 @@
    randomize();
    choice = floor(random(len));
 }
-other.lastRoom = room;
 other.x = room_width - other.x;
 room_goto(roomList[choice]);
 </string>
