@@ -85,18 +85,18 @@
       <object>objects\obj_multispiral_ccw</object>
       <object>objects\obj_complex_rose</object>
       <object>objects\obj_simple_rose</object>
-      <object>objects\obj_whiplash</object>
+      <object>objects\obj_sine_wave</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
     <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
     <rooms name="test1">
+      <room>rooms\bullet_test</room>
       <room>rooms\room0</room>
       <room>rooms\rand2</room>
       <room>rooms\zigzag_room</room>
       <room>rooms\room10</room>
-      <room>rooms\bullet_test</room>
       <room>rooms\rand1</room>
     </rooms>
     <room>rooms\gideonRoom</room>
@@ -106,6 +106,7 @@
       <room>rooms\dgn1_boss</room>
       <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzballs</room>
+      <room>rooms\dgn1_whiplash</room>
     </rooms>
   </rooms>
   <help>
