@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rotateAngle = 15;
-image_angle = 90;
+            <string>rotateAngle = 4;
 curBullet = 0;
-numBullets = 180;
-pauseDelay = 240;
+numBullets = 360;
+pauseDelay = 360;
+bullSpeed = 5;
 </string>
           </argument>
         </arguments>
@@ -53,12 +53,12 @@ pauseDelay = 240;
           <argument>
             <kind>1</kind>
             <string>if (curBullet &lt; numBullets) {
-    bull = instance_create(x, y, obj_spiral_bull);
+    bull = instance_create(x, y, obj_basicbullet);
     bull.direction = rotateAngle * curBullet;
-    bull.speed = 1;
-    bull.accel = 0.05;
-    bull.angVelocity = 1.2;
-    bull.maxSpeed = 1.1;
+    bull.speed = bullSpeed;
+    bull.accel = 0;
+    bull.angVelocity = 0;
+    bull.maxSpeed = bullSpeed;
     bull.sprite_index = spr_bullet_green;   
 }
 

@@ -17,11 +17,11 @@
     <sprite>sprites\spr_chain</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_crystal</sprite>
     <sprites name="enemies">
       <sprite>sprites\spr_fuzzball</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
       <sprite>sprites\spr_fuzz3</sprite>
+      <sprite>sprites\spr_crystal</sprite>
       <sprite>sprites\spr_fuzz2</sprite>
     </sprites>
     <sprites name="spr_me">
@@ -62,34 +62,54 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
     <object>objects\obj_basicbullet</object>
+    <object>objects\obj_basiclaser</object>
     <object>objects\obj_sunburst</object>
     <object>objects\obj_sunburst_bull</object>
     <object>objects\obj_spiral_bull</object>
     <objects name="enemies">
       <object>objects\obj_plant</object>
+      <object>objects\obj_crystal_slow</object>
+      <object>objects\obj_crystal_fast</object>
       <object>objects\obj_crystal</object>
       <object>objects\obj_fuzzball</object>
+      <object>objects\fuzzSpawner1</object>
+      <object>objects\obj_crystal_emitter</object>
+      <object>objects\obj_dgn1_boss</object>
     </objects>
     <objects name="bullet patterns">
       <object>objects\obj_shotgun</object>
+      <object>objects\obj_single_whip</object>
       <object>objects\obj_spiral_cw</object>
       <object>objects\obj_spiral_ccw</object>
       <object>objects\obj_multispiral_cw</object>
       <object>objects\obj_multispiral_ccw</object>
       <object>objects\obj_complex_rose</object>
       <object>objects\obj_simple_rose</object>
+      <object>objects\obj_whiplash</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
     <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\bullet_test</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\zigzag_room</room>
     <room>rooms\rand1</room>
     <room>rooms\rand2</room>
     <room>rooms\rm_gameOver</room>
+    <rooms name="dgn1">
+      <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_boss</room>
+      <room>rooms\dgn1_crystals_fast</room>
+      <room>rooms\dgn1_fuzzballs</room>
+    </rooms>
+    <rooms name="test1">
+      <room>rooms\room0</room>
+      <room>rooms\rand2</room>
+      <room>rooms\zigzag_room</room>
+      <room>rooms\room10</room>
+      <room>rooms\bullet_test</room>
+      <room>rooms\rand1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

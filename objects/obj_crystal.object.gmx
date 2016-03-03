@@ -25,15 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 0;
+            <string>moverate = 10;          //how much time it takes for movement
+stationaryTime = 30;    //how long stays still
+maxDist = 200;          //how far it can move
+attackType = 0;         //which emitter attack to use
 
-count = 0;
-
+speed = 0;
 image_speed = 0.2;
+count = 0;
+movecount = 0;
+
 
 xBound = 100;
 yBound = 100;
+xDest = random_range(xBound, room_width-xBound);
+yDest = random_range(yBound, room_height-yBound);
 
+myEmitter = instance_create(x, y, obj_crystal_emitter);
+myEmitter.crystal = id;
+myEmitter.attackType = attackType;
+
+starting = true;
 </string>
           </argument>
         </arguments>
@@ -56,61 +68,34 @@ yBound = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>count += 1;
+            <string>movecount += 1;
 
-if(count == 60){
-    dir = irandom(359);
-    num = 8;
-    for(i = 0; i &lt; num; i += 1){
-        bull = instance_create(x, y, obj_basicbullet);
-        bull.direction = 360*i/num;
-        bull.speed = 3;
-        bull.accel = 0.1;
-        bull.maxspeed = 8;
-        bull.angVelocity = 1.2;
-        bull.sprite_index = spr_bullet_green;
-        
-        bull = instance_create(x, y, obj_basicbullet);
-        bull.direction = 360*i/num;
-        bull.speed = 3;
-        bull.accel = 0.1;
-        bull.maxspeed = 8;
-        bull.angVelocity = -1.2;
-        bull.sprite_index = spr_bullet_red;
+if(movecount == stationaryTime/2){
+    if(starting){
+        starting = false;
+    }else{
+        myEmitter.attackType = attackType;
+        with(myEmitter){
+            event_user(attackType);
+        }
     }
-    
-    count = 0;
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-movecount += 1;
-
-if(movecount &gt;= 120){
+if(movecount == stationaryTime){
     xDest = random_range(xBound, room_width-xBound);
     yDest = random_range(yBound, room_height-yBound);
-    move_towards_point(xDest, yDest, baseSpd);
+    
+    //prevent from going way too far
+    var dist = distance_to_point(xDest, yDest);
+    if(dist &gt; maxDist){
+        dist = maxDist;
+    }
+    
+    move_towards_point(xDest, yDest, dist/moverate);
 }
-if(distance_to_point(xDest, yDest) &lt; 5){
+
+if(movecount == stationaryTime + moverate){
+    speed = 0;
     movecount = 0;
 }
 </string>
