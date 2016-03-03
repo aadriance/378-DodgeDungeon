@@ -88,15 +88,9 @@
       <object>objects\obj_whiplash</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
+    <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\gideonRoom</room>
-    <rooms name="dgn1">
-      <room>rooms\dgn1_crystals_lasers</room>
-      <room>rooms\dgn1_boss</room>
-      <room>rooms\dgn1_crystals_fast</room>
-      <room>rooms\dgn1_fuzzballs</room>
-    </rooms>
     <rooms name="test1">
       <room>rooms\room0</room>
       <room>rooms\rand2</room>
@@ -104,6 +98,14 @@
       <room>rooms\room10</room>
       <room>rooms\bullet_test</room>
       <room>rooms\rand1</room>
+    </rooms>
+    <room>rooms\gideonRoom</room>
+    <room>rooms\rm_gameOver</room>
+    <rooms name="dgn1">
+      <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_boss</room>
+      <room>rooms\dgn1_crystals_fast</room>
+      <room>rooms\dgn1_fuzzballs</room>
     </rooms>
   </rooms>
   <help>
