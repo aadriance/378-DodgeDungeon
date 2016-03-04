@@ -154,11 +154,11 @@ if(ttl == 0){
           </argument>
           <argument>
             <kind>0</kind>
-            <string>x</string>
+            <string>-5</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>y</string>
+            <string>-5</string>
           </argument>
           <argument>
             <kind>4</kind>
