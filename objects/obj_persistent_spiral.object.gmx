@@ -30,7 +30,7 @@ arms = 6;
 bullspeed = 6;
 angularChange = -7;
 baseAng = random_range(0,359);
-spawnDist = 15;
+spawnDist = 25;
 
 myEnemy = 0;
 

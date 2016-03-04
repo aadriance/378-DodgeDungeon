@@ -40,6 +40,7 @@
       <sprite>sprites\spr_bullet_dark</sprite>
     </sprites>
     <sprite>sprites\spr_staminabar</sprite>
+    <sprite>sprites\spr_slash</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -98,6 +99,7 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
+      <room>rooms\dgn1_bouncyAndFuzzes</room>
       <room>rooms\dgn1_fuzzAndFlowers</room>
       <room>rooms\dgn1_bouncies</room>
       <room>rooms\dgn1_crystals_lasers</room>
