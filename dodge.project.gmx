@@ -23,6 +23,7 @@
       <sprite>sprites\spr_fuzz3</sprite>
       <sprite>sprites\spr_crystal</sprite>
       <sprite>sprites\spr_fuzz2</sprite>
+      <sprite>sprites\spr_bouncy</sprite>
     </sprites>
     <sprites name="spr_me">
       <sprite>sprites\spr_me_d</sprite>
@@ -76,6 +77,7 @@
       <object>objects\obj_fuzzball</object>
       <object>objects\obj_fuzzbro</object>
       <object>objects\fuzzSpawner1</object>
+      <object>objects\obj_bouncy</object>
       <object>objects\obj_crystal_emitter</object>
       <object>objects\obj_dgn1_boss</object>
     </objects>
@@ -89,12 +91,15 @@
       <object>objects\obj_complex_rose</object>
       <object>objects\obj_simple_rose</object>
       <object>objects\obj_sine_wave</object>
+      <object>objects\obj_persistent_spiral</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
     <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
+      <room>rooms\dgn1_fuzzAndFlowers</room>
+      <room>rooms\dgn1_bouncies</room>
       <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_fuzzbros</room>
       <room>rooms\dgn1_boss</room>
