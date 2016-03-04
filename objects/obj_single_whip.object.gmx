@@ -26,15 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>numShots = 6;
-basespeed = 6;
-overtakeRate = 3;
-delay = 4;
-
+basespeed = 2;
+basedir = 270;
+bulletspace = 6;
+overtakeRate = 1;
+delay = 6;
+shootRight = true;
 count = 0;
-subcount = 0;
 shot = 0;
 
-i = 0;
 </string>
           </argument>
         </arguments>
@@ -59,15 +59,22 @@ i = 0;
             <kind>1</kind>
             <string>count += 1;
 
-var basedir = 0;
-
-if (count == delay &amp;&amp; shot &lt; numShots){
+if (count == delay) {
     b = instance_create(x, y, obj_basicbullet);
-    b.direction = basedir + shot*2;
+    
+    if (!shootRight)
+        b.direction = basedir + shot * bulletspace;
+    else
+        b.direction = basedir + -(shot * bulletspace);
+    
     b.speed = basespeed + shot * overtakeRate;
     
     shot += 1;
     count = 0;
+}
+
+if (shot &gt; numShots) {
+    shot = 0;
 }
 </string>
           </argument>
