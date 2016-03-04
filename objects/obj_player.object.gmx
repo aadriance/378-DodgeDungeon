@@ -416,8 +416,9 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_gameOver);
-instance_destroy();
+            <string>
+//Emitters that reference their enemies will break if you kill their enemy
+//mySword.inUse = true;
 </string>
           </argument>
         </arguments>
