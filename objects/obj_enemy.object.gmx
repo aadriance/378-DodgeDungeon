@@ -104,6 +104,7 @@ if myLife &lt; 1 {
             <kind>1</kind>
             <string>if other.visible {
    myLife -= 1; 
+    instance_create(x, y, obj_anim_blast);
 }
 </string>
           </argument>
