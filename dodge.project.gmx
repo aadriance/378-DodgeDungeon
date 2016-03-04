@@ -101,13 +101,13 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
-      <room>rooms\dgn1_whiplash</room>
-      <room>rooms\dgn1_crystals_fast</room>
-      <room>rooms\dgn1_boss</room>
-      <room>rooms\dgn1_crystals_lasers</room>
-      <room>rooms\dgn1_bouncies</room>
-      <room>rooms\dgn1_fuzzAndFlowers</room>
       <room>rooms\dgn1_bouncyAndFuzzes</room>
+      <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_fuzzAndFlowers</room>
+      <room>rooms\dgn1_bouncies</room>
+      <room>rooms\dgn1_crystals_fast</room>
+      <room>rooms\dgn1_whiplash</room>
+      <room>rooms\dgn1_boss</room>
       <room>rooms\dgn1_fuzzbros</room>
       <room>rooms\dgn1_fuzzballs</room>
     </rooms>
@@ -118,8 +118,8 @@
       <room>rooms\zigzag_room</room>
       <room>rooms\room10</room>
       <room>rooms\rand1</room>
+      <room>rooms\gideonRoom</room>
     </rooms>
-    <room>rooms\gideonRoom</room>
     <room>rooms\rm_gameOver</room>
   </rooms>
   <help>

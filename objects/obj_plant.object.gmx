@@ -107,7 +107,7 @@ if(count == 200){
         bull.speed = 1;
         bull.accel = 0.1;
         bull.maxspeed = 5;
-        bull.angVelocity = 2;
+        bull.angVelocity = 1.5;
         bull.sprite_index = spr_bullet_green;
         
         bull = instance_create(x, y, obj_basicbullet);
@@ -115,7 +115,7 @@ if(count == 200){
         bull.speed = 1;
         bull.accel = 0.1;
         bull.maxspeed = 5;
-        bull.angVelocity = -2;
+        bull.angVelocity = -1.5;
         bull.sprite_index = spr_bullet_red;
     }
 </string>
