@@ -58,11 +58,13 @@
     </scripts>
     <script>scripts\getPreviousRoom.gml</script>
     <script>scripts\draw_healthbar_circular.gml</script>
+    <script>scripts\enemy_create.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_enemy_turn</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_door</object>
     <object>objects\obj_basicbullet</object>
@@ -99,15 +101,15 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
-      <room>rooms\dgn1_bouncyAndFuzzes</room>
-      <room>rooms\dgn1_fuzzAndFlowers</room>
-      <room>rooms\dgn1_bouncies</room>
-      <room>rooms\dgn1_crystals_lasers</room>
-      <room>rooms\dgn1_fuzzbros</room>
-      <room>rooms\dgn1_boss</room>
-      <room>rooms\dgn1_fuzzballs</room>
-      <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_whiplash</room>
+      <room>rooms\dgn1_crystals_fast</room>
+      <room>rooms\dgn1_boss</room>
+      <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_bouncies</room>
+      <room>rooms\dgn1_fuzzAndFlowers</room>
+      <room>rooms\dgn1_bouncyAndFuzzes</room>
+      <room>rooms\dgn1_fuzzbros</room>
+      <room>rooms\dgn1_fuzzballs</room>
     </rooms>
     <rooms name="test1">
       <room>rooms\bullet_test</room>
