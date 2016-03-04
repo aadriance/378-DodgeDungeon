@@ -166,8 +166,8 @@
     <instance objName="obj_fuzzbro" x="640" y="160" name="inst_D77D2AE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzbro" x="400" y="280" name="inst_D5523935" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzbro" x="160" y="160" name="inst_990BA6C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="360" y="520" name="inst_82DFB289" locked="0" code="roomList[0] = getPreviousRoom();&#xA;" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="360" y="0" name="inst_723AAFBB" locked="0" code="roomList[0] = dgn1_fuzzAndFlowers&#xA;" scaleX="2.5806450843811" scaleY="1.28999996185303" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal" x="360" y="520" name="inst_82DFB289" locked="0" code="roomList[0] = getPreviousRoom();&#xA;" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal" x="360" y="0" name="inst_723AAFBB" locked="0" code="roomList[0] = dgn1_fuzzAndFlowers&#xA;" scaleX="2.5806450843811" scaleY="1.28999996185303" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="0" w="40" h="40" xo="0" yo="0" id="10000001" name="inst_77DCA754" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

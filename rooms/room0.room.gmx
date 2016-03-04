@@ -70,7 +70,7 @@
     <instance objName="obj_wall" x="0" y="512" name="inst_D0866F45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="96" y="704" name="inst_DF28BD2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_turn" x="928" y="96" name="inst_EE4B6302" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="0" y="544" name="inst_D5B2D4C6" locked="0" code="roomList[0] = rand1&#xA;roomList[1] = rand2" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal" x="0" y="544" name="inst_D5B2D4C6" locked="0" code="roomList[0] = rand1&#xA;roomList[1] = rand2" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="640" name="inst_14DC91B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="512" name="inst_666FA408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="640" name="inst_C0622605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

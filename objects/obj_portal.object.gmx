@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>choice = -1
 
+image_alpha = 0.2;
 </string>
           </argument>
         </arguments>
