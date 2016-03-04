@@ -80,6 +80,10 @@ if myLife &lt; 1 {
    instance_destroy();
 }
 
+if invul &gt; 0 {
+   invul -= 1;
+}
+
 </string>
           </argument>
         </arguments>
@@ -102,8 +106,9 @@ if myLife &lt; 1 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if other.visible {
+            <string>if other.visible &amp;&amp; invul == 0 {
    myLife -= 1; 
+   invul = 6;
     instance_create(x, y, obj_anim_blast);
 }
 </string>

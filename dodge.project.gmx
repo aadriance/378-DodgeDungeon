@@ -104,8 +104,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
-      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_fuzzballs</room>
+      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzAndFlowers</room>
       <room>rooms\dgn1_fuzzbros</room>
