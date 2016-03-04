@@ -49,6 +49,7 @@
 stationaryTime = 30;    //how long stays still
 maxDist = 200;          //how far it can move
 attackType = 0;         //which emitter attack to use
+whenAttackWhileStationary = 15;
 
 speed = 0;
 image_speed = 0.2;
@@ -90,7 +91,7 @@ starting = true;
             <kind>1</kind>
             <string>movecount += 1;
 
-if(movecount == stationaryTime/2){
+if(movecount == whenAttackWhileStationary){
     if(starting){
         starting = false;
     }else{

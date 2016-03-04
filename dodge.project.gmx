@@ -31,6 +31,8 @@
       <sprite>sprites\spr_me_u</sprite>
     </sprites>
     <sprites name="bullets">
+      <sprite>sprites\spr_laser_red</sprite>
+      <sprite>sprites\spr_laser_blue</sprite>
       <sprite>sprites\spr_bullet_red</sprite>
       <sprite>sprites\spr_bullet_green</sprite>
       <sprite>sprites\spr_bullet_blue</sprite>
@@ -93,11 +95,11 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
-      <room>rooms\dgn1_fuzzbros</room>
       <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_fuzzbros</room>
       <room>rooms\dgn1_boss</room>
-      <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzballs</room>
+      <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_whiplash</room>
     </rooms>
     <rooms name="test1">

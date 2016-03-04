@@ -115,14 +115,14 @@ for(i = 0; i &lt; num2; i += 1){
             <kind>1</kind>
             <string>for(i = 0; i &lt; num1; i += 1){
     b = instance_create(x, y, obj_basiclaser);
-    b.sprite_index = spr_bullet_blue;
+    b.sprite_index = spr_laser_blue;
     b.radialDist = 20;
     
     b.direction = i*360/num1;
-    b.endWidth = 1.2;
+    b.endWidth = 1.5;
     
     b.delay = 15;
-    b.ttl = 20;
+    b.ttl = 25;
     
     b = instance_create(x, y, obj_basicbullet);
     b.sprite_index = spr_bullet_blue;

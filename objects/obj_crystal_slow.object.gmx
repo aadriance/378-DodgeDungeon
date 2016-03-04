@@ -51,6 +51,7 @@ moverate = 20;
 stationaryTime = 60;
 maxDist = 250;
 attackType = 1;
+whenAttackWhileStationary = 10;
 </string>
           </argument>
         </arguments>
