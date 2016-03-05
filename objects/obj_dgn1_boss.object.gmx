@@ -33,6 +33,8 @@ attackType = 0;
 moverate = 20;
 hoverTime = 40;
 moveCount = 0;
+pathid= path_boss_1
+path_start(pathid, 12, path_action_stop, true);
 
 enemy_create(self, obj_basicBulletEmitter);
 bulletPattern = instance_create(x, y, obj_basicBulletEmitter);
@@ -59,7 +61,8 @@ bulletPattern.patternType = attackType;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>moveCount += 1;
+            <string>/*
+moveCount += 1;
 if (moveCount == hoverTime) {
     xDest = random_range(xRange, room_width - xRange);
     var dist = distance_to_point(xDest, y);
@@ -70,6 +73,19 @@ if (moveCount == hoverTime + moverate) {
     speed = 0;
     moveCount = 0;
     bulletPattern = instance_create(x, y, obj_complex_rose);
+} */
+
+if (path_position = 1) {
+    switch(pathid) {
+        case 0:
+            pathid = path_boss_2
+            path_start(path_boss_2, 12, path_action_stop, true );
+            break;
+        case 1:
+            pathid = path_boss_1
+            path_start(path_boss_1, 12, path_action_stop, true);
+            break;
+    }
 }
 </string>
           </argument>
