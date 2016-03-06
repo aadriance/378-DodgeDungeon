@@ -50,6 +50,7 @@
   <paths name="paths">
     <path>paths\path_boss_1</path>
     <path>paths\path_boss_2</path>
+    <path>paths\path_boss_3</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\swingSword.gml</script>
