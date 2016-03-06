@@ -31,6 +31,8 @@ image_speed = 0.5;
 speed = 1;
 
 direction = random_range(0,359);
+
+myLife = 3;
 </string>
           </argument>
         </arguments>
