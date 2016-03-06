@@ -34,9 +34,10 @@ dashLevel = 100;
 isDashing = false;
 dashModifier = 1.5;
 dashCool = 0;
-dashRate = 4;
+dashRate = 8;
 
 swordCool = 0;
+invul = 0;
 
 lastRoom = room;
 randomize();
@@ -118,6 +119,7 @@ if keyboard_check(vk_down)
 
 if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= dashRate &amp;&amp; dashCool == 0 {
    isDashing = true;
+   invul = 3;
 }
 else {
    isDashing = false;
@@ -132,7 +134,7 @@ if (isDashing) {
    }
 }   
 else {
-   dashLevel += dashRate/2;
+   dashLevel += dashRate/4;
    if dashCool &gt; 0 {
      dashCool -= 1;
    }
@@ -176,6 +178,10 @@ else {
    
 if (abs(dx) + abs(dy) != 0) {
    myDir = point_direction(x,y,x+dx,y+dy);
+}
+
+if (invul &gt; 0) {
+   invul -= 1;
 }
    
 </string>
@@ -228,8 +234,9 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.active == true){
+            <string>if(other.active == 0 &amp;&amp; invul &lt; 1){
     lives -=1;
+    invul = 6;
 }
 </string>
           </argument>
@@ -239,37 +246,31 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
     <event eventtype="4" ename="obj_basicbullet">
       <action>
         <libid>1</libid>
-        <id>711</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_life</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(invul &lt; 1){
+    lives -=1;
+    invul = 8;
+}
+
+with(other){
+   instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_wall">
