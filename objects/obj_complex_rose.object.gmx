@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>rotateAngle = 1;   
 curBullet = 0;                 
-bulletSpacing = 4
-numBullets = 50;      
-pauseDelay = 240;        
+bulletSpacing = 6
+numBullets = 120;      
+pauseDelay = 130;        
 bulletAngle = 0;
 bullSpeed = 5;
 bullAccel = 0;
@@ -50,22 +50,22 @@ speedLim = bullSpeed;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
             <string>if (curBullet &lt; numBullets &amp;&amp; curBullet % bulletSpacing == 0) {
-    arm1 = instance_create(x - 1, y, obj_spiral_bull);
-    arm2 = instance_create(x + 1, y + 1, obj_spiral_bull);
-    arm3 = instance_create(x + 1, y, obj_spiral_bull);
-    arm4 = instance_create(x, y - 1, obj_spiral_bull);
+    arm1 = instance_create(x - 1, y, obj_basicbullet);
+    arm2 = instance_create(x + 1, y + 1, obj_basicbullet);
+    arm3 = instance_create(x + 1, y, obj_basicbullet);
+    arm4 = instance_create(x, y - 1, obj_basicbullet);
     
-    arm5 = instance_create(x - 1, y + 1, obj_sunburst_bull);
-    arm6 = instance_create(x + 1, y + 1, obj_sunburst_bull);
-    arm7 = instance_create(x + 1, y - 1, obj_sunburst_bull);
-    arm8 = instance_create(x - 1, y - 1, obj_sunburst_bull);
+    arm5 = instance_create(x - 1, y + 1, obj_basicbullet);
+    arm6 = instance_create(x + 1, y + 1, obj_basicbullet);
+    arm7 = instance_create(x + 1, y - 1, obj_basicbullet);
+    arm8 = instance_create(x - 1, y - 1, obj_basicbullet);
     
     arm1.direction = 0 + rotateAngle * curBullet;
     arm2.direction = 90 + rotateAngle * curBullet;
@@ -115,6 +115,10 @@ speedLim = bullSpeed;
 }
 
 curBullet += 1;
+
+if (curBullet = pauseDelay) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

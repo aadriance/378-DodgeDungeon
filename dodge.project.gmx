@@ -47,7 +47,11 @@
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_boss_1</path>
+    <path>paths\path_boss_2</path>
+    <path>paths\path_boss_3</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\swingSword.gml</script>
     <script>scripts\draw_path_sprite.gml</script>
@@ -104,6 +108,7 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
+      <room>rooms\dgn1_boss</room>
       <room>rooms\dgn1_fuzzballs</room>
       <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_crystals_fast</room>
@@ -112,7 +117,6 @@
       <room>rooms\dgn1_bouncies</room>
       <room>rooms\dgn1_bouncyAndFuzzes</room>
       <room>rooms\dgn1_whiplash</room>
-      <room>rooms\dgn1_boss</room>
     </rooms>
     <rooms name="test1">
       <room>rooms\bullet_test</room>
