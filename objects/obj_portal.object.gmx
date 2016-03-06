@@ -53,7 +53,12 @@
    randomize();
    choice = floor(random(len));
 }
-other.x = room_width - other.x;
+if abs(other.hspeed) &lt; 1 {
+   other.x = room_width - other.x;
+}
+if abs(other.vspeed) &lt; 1 {
+   other.y = room_height - other.y;
+}
 room_goto(roomList[choice]);
 </string>
           </argument>

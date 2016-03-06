@@ -66,6 +66,7 @@
     <script>scripts\getPreviousRoom.gml</script>
     <script>scripts\draw_healthbar_circular.gml</script>
     <script>scripts\enemy_create.gml</script>
+    <script>scripts\set_bullet_parts.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -112,6 +113,13 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="DoorTest">
+      <room>rooms\rm_door_test_c</room>
+      <room>rooms\rm_door_test_d</room>
+      <room>rooms\rm_door_test_u</room>
+      <room>rooms\rm_door_test_r</room>
+      <room>rooms\rm_door_test_l</room>
+    </rooms>
     <rooms name="dgn1">
       <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_start_A1</room>
