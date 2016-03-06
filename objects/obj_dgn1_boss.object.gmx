@@ -25,18 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>delay = 0;
+            <string>delay = 30;
 image_speed = 0.2;
-xRange = 50;
-xDest = random_range(xRange, room_width - xRange);
+hasStopped = true;
 attackType = 0;
-moverate = 20;
-hoverTime = 40;
-moveCount = 0;
 
-enemy_create(self, obj_basicBulletEmitter);
-bulletPattern = instance_create(x, y, obj_basicBulletEmitter);
-bulletPattern.patternType = attackType;
+pathid = path_boss_1
+path_start(path_boss_1, 12, path_action_stop, true);
+
+enemy_create(self, obj_shotgun);
+//bulletPattern = instance_create(x, y, obj_basicBulletEmitter);
+//bulletPattern.patternType = attackType;
 </string>
           </argument>
         </arguments>
@@ -59,17 +58,135 @@ bulletPattern.patternType = attackType;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>moveCount += 1;
-if (moveCount == hoverTime) {
-    xDest = random_range(xRange, room_width - xRange);
-    var dist = distance_to_point(xDest, y);
-    move_towards_point(xDest, y, dist/moverate);
+            <string>curPlace = path_position;
+switch(pathid) {
+    case 0:
+        if (curPlace &gt;= 0.25 &amp;&amp; curPlace &lt;= 0.25) {
+            obj_shotgun.count++;
+            obj_shotgun.baseDir = -10;
+        }
+        if (curPlace &gt;= 0.50 &amp;&amp; curPlace &lt;= 0.50) {
+            obj_shotgun.count++;
+            obj_shotgun.baseDir = 80;
+        }
+        if (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.75) {
+            obj_shotgun.count++;
+            obj_shotgun.baseDir = 170;
+        }
+        if (curPlace &gt;= 0.99) {
+            obj_shotgun.count++;
+            obj_shotgun.baseDir = 260;
+        }
+        break;
+    case 1:
+        if ((curPlace &gt;= 0.25 &amp;&amp; curPlace &lt;= 0.26) || (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.755)) {
+            if (!instance_exists(obj_spiral_cw))
+                instance_create(x, y, obj_spiral_cw);
+        }
+        if (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.755)  {
+            if (!instance_exists(obj_spiral_ccw))
+                instance_create(x, y, obj_spiral_ccw);
+        }
+        break;
+    case 2:
+        if (curPlace = 0.5) {
+            if (!instance_exists(obj_complex_rose)) {
+                instance_create(x, y, obj_complex_rose);
+            }
+        }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>curPlace = path_position;
+switch(pathid) {
+    case 0: //on path 1 
+        if (curPlace = 0.25 || curPlace = 0.5 || curPlace = 0.75 || curPlace &gt;= 0.99) {
+            if (delay-- &gt; 0) {
+                path_speed = 0;
+            }
+            else {
+                path_speed = 12;
+                delay = 30;
+            }
+        }
+        break;
+    case 1:
+        if ((curPlace &gt;= 0.25 &amp;&amp; curPlace &lt;= 0.26) || (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.76))  {
+            if (delay-- &gt; 0) {
+                path_speed = 0;
+            }
+            else {
+                path_speed = 8;
+                delay = 30;
+            }
+        }
+        break;
+    case 2:
+        if (curPlace = 0.5) {
+            if (delay-- &gt; 0) {
+                path_speed = 0;
+            }
+            else {
+                path_speed = 12;
+                delay = 30;
+            }
+        }
+        break;
 }
 
-if (moveCount == hoverTime + moverate) {
-    speed = 0;
-    moveCount = 0;
-    bulletPattern = instance_create(x, y, obj_complex_rose);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (path_position == 1) {
+    switch(pathid) {
+        case 0:
+            pathid = path_boss_2;
+            path_start(path_boss_2, 8, path_action_stop, true);
+            break;
+        case 1:
+            pathid = path_boss_3;
+            path_start(path_boss_3, 12, path_action_stop, true);
+            break;
+        case 2:
+            pathid = path_boss_1;
+            path_start(path_boss_1, 12, path_action_stop, true);
+            break;
+    }
 }
 </string>
           </argument>

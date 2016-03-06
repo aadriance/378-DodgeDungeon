@@ -142,7 +142,6 @@ if(ttl &gt; 0){
 }else{
     active = false;
     if(image_yscale &gt; 0){
-        show_debug_message(image_yscale);
         image_yscale -= widthShrink;
         if(image_yscale &lt; 0){
             image_yscale = 0;

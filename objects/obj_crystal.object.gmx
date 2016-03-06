@@ -86,7 +86,7 @@ starting = true;
             <kind>1</kind>
             <string>movecount += 1;
 
-if(movecount == whenAttackWhileStationary){
+if(movecount == whenAttackWhileStationary &amp;&amp; myLife &gt; 0){
     if(starting){
         starting = false;
     }else{

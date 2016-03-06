@@ -36,6 +36,8 @@ dashModifier = 1.5;
 dashCool = 0;
 dashRate = 4;
 
+swordCool = 0;
+
 lastRoom = room;
 randomize();
 </string>
@@ -196,16 +198,39 @@ if (abs(dx) + abs(dy) != 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(ord('Z')) &amp;&amp; !mySword.inUse {
-   audio_play_sound(snd_sword, 0, 0);
-   swingSword(mySword);
+            <string>if(swordCool&gt;0){
+    swordCool -= 1;
 }
-
-mySword.image_angle -= lastDir;
-mySword.image_angle += myDir;
-lastDir = myDir;
-mySword.x = x;
-mySword.y = y;
+if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
+    sw = instance_create(x, y, obj_sword);
+    sw.image_angle = myDir;
+    swordCool = 8;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_basiclaser">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(other.active == true){
+    lives -=1;
+}
 </string>
           </argument>
         </arguments>
@@ -416,9 +441,7 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//Emitters that reference their enemies will break if you kill their enemy
-//mySword.inUse = true;
+            <string>mySword.inUse = true;
 </string>
           </argument>
         </arguments>

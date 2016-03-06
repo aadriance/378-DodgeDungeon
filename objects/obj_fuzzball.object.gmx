@@ -99,9 +99,9 @@ if(speed &gt; maxspd){
 if(count == 10){
     bull = instance_create(x, y, obj_basicbullet);
     bull.direction = irandom(359);
-    bull.speed = 4;
-    bull.accel = -0.2;
-    bull.minspd = 0;
+    bull.speed = 2;
+    bull.accel = -0.1;
+    bull.minspd = 0.4;
     bull.ttl = 50;
     bull.sprite_index = spr_bullet_dark;
     
@@ -125,6 +125,29 @@ if(count == 10){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_sword">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_wall">

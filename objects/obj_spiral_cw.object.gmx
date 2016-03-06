@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>rotateAngle = 4;
 curBullet = 0;
-numBullets = 360;
-pauseDelay = 360;
+numBullets = 120;
+pauseDelay = 120;
 bullSpeed = 5;
 </string>
           </argument>
@@ -52,7 +52,7 @@ bullSpeed = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (curBullet &lt; numBullets) {
+            <string>if (curBullet &lt; numBullets &amp;&amp; curBullet % 2 = 0) {
     bull = instance_create(x, y, obj_basicbullet);
     bull.direction = rotateAngle * curBullet;
     bull.speed = bullSpeed;
@@ -64,8 +64,8 @@ bullSpeed = 5;
 
 curBullet += 1;
 
-if (curBullet &gt; pauseDelay) {
-    curBullet = 0;
+if (curBullet = pauseDelay) {
+    instance_destroy();
 }
 </string>
           </argument>
