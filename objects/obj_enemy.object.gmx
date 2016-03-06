@@ -51,6 +51,10 @@
             <string>with(myEmitter) {
    instance_destroy();
 }
+
+with(instance_find(obj_room_ctrl, 0)){
+    event_user(0);
+}
 </string>
           </argument>
         </arguments>

@@ -70,6 +70,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_door</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_portal</object>
     <object>objects\obj_basicbullet</object>
@@ -105,12 +106,13 @@
       <object>objects\obj_anim_blast</object>
       <object>objects\obj_anim_effect</object>
     </objects>
+    <object>objects\obj_room_ctrl</object>
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
+      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_boss</room>
       <room>rooms\dgn1_fuzzballs</room>
-      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzAndFlowers</room>
       <room>rooms\dgn1_fuzzbros</room>
