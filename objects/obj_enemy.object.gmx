@@ -51,6 +51,12 @@
             <string>with(myEmitter) {
    instance_destroy();
 }
+
+if(instance_exists(obj_room_ctrl)){
+    with(instance_find(obj_room_ctrl, 0)){
+        event_user(0);
+    }
+}
 </string>
           </argument>
         </arguments>

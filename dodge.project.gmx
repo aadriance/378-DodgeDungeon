@@ -18,6 +18,7 @@
     <sprite>sprites\spr_chain</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_portal</sprite>
     <sprites name="enemies">
       <sprite>sprites\spr_fuzzball</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
@@ -65,19 +66,24 @@
     <script>scripts\getPreviousRoom.gml</script>
     <script>scripts\draw_healthbar_circular.gml</script>
     <script>scripts\enemy_create.gml</script>
+    <script>scripts\set_bullet_parts.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <objects name="room control">
+      <object>objects\obj_door</object>
+      <object>objects\obj_portal</object>
+      <object>objects\obj_room_ctrl</object>
+      <object>objects\obj_wall</object>
+    </objects>
     <object>objects\obj_sword</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_portal</object>
     <object>objects\obj_basicbullet</object>
     <object>objects\obj_basiclaser</object>
     <objects name="enemies">
       <object>objects\obj_plant</object>
       <object>objects\obj_crystal_slow</object>
       <object>objects\obj_crystal_fast</object>
+      <object>objects\obj_enemy</object>
       <object>objects\obj_crystal</object>
       <object>objects\obj_enemy_turn</object>
       <object>objects\obj_fuzzball</object>
@@ -107,10 +113,37 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="DoorTest">
+      <room>rooms\rm_door_test_c</room>
+      <room>rooms\rm_door_test_d</room>
+      <room>rooms\rm_door_test_u</room>
+      <room>rooms\rm_door_test_r</room>
+      <room>rooms\rm_door_test_l</room>
+    </rooms>
     <rooms name="dgn1">
+      <room>rooms\dgn1_crystals_lasers</room>
+      <room>rooms\dgn1_start_A1</room>
+      <room>rooms\dgn1_A2</room>
+      <room>rooms\dgn1_B2</room>
+      <room>rooms\dgn1_C2</room>
+      <room>rooms\dgn1_D2</room>
+      <room>rooms\dgn1_A4</room>
+      <room>rooms\dgn1_A3</room>
+      <room>rooms\dgn1_B3</room>
+      <room>rooms\dgn1_C3</room>
+      <room>rooms\dgn1_B4</room>
+      <room>rooms\dgn1_C4</room>
+      <room>rooms\dgn1_D4</room>
+      <room>rooms\dgn1_A5</room>
+      <room>rooms\dgn1_B5</room>
+      <room>rooms\dgn1_C5</room>
+      <room>rooms\dgn1_A6</room>
+      <room>rooms\dgn1_A7</room>
+      <room>rooms\dgn1_B7</room>
+      <room>rooms\dgn1_C7</room>
+      <room>rooms\dgn1_prep</room>
       <room>rooms\dgn1_boss</room>
       <room>rooms\dgn1_fuzzballs</room>
-      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzAndFlowers</room>
       <room>rooms\dgn1_fuzzbros</room>
