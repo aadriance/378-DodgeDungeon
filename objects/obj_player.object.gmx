@@ -32,7 +32,7 @@ mySword.visible = false;
 moveRate = 6;
 dashLevel = 100;
 isDashing = false;
-dashModifier = 1.5;
+dashModifier = 2.5;
 dashCool = 0;
 dashRate = 16;
 
@@ -117,7 +117,7 @@ if keyboard_check(vk_down)
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
 
-if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= 95 &amp;&amp; dashCool == 0 {
+if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= dashRate &amp;&amp; dashCool == 0 &amp;&amp; image_speed &gt; 0 {
    isDashing = true;
    invul = 3;
 }
@@ -130,11 +130,11 @@ if (isDashing) {
    dy *= dashModifier;
    dashLevel -= dashRate;
    if dashLevel == 0 {
-      dashCool = 20;
+      dashCool = 60;
    }
 }   
 else {
-   dashLevel += dashRate/4;
+   dashLevel += dashRate/8;
    if dashCool &gt; 0 {
      dashCool -= 1;
    }
