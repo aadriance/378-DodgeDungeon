@@ -83,7 +83,7 @@ switch(pathid) {
             if (!instance_exists(obj_spiral_cw))
                 instance_create(x, y, obj_spiral_cw);
         }
-        if (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.755)  {
+        if (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.76)  {
             if (!instance_exists(obj_spiral_ccw))
                 instance_create(x, y, obj_spiral_ccw);
         }
@@ -145,7 +145,7 @@ switch(pathid) {
                 path_speed = 0;
             }
             else {
-                path_speed = 12;
+                path_speed = 4;
                 delay = 30;
             }
         }
