@@ -34,7 +34,7 @@ dashLevel = 100;
 isDashing = false;
 dashModifier = 1.5;
 dashCool = 0;
-dashRate = 8;
+dashRate = 16;
 
 swordCool = 0;
 invul = 0;
@@ -117,7 +117,7 @@ if keyboard_check(vk_down)
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
 
-if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= dashRate &amp;&amp; dashCool == 0 {
+if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= 95 &amp;&amp; dashCool == 0 {
    isDashing = true;
    invul = 3;
 }
