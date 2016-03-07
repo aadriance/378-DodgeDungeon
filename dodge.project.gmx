@@ -113,6 +113,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\dgn1_boss</room>
     <room>rooms\gideonRoom</room>
     <rooms name="DoorTest">
       <room>rooms\rm_door_test_c</room>
@@ -143,7 +144,6 @@
       <room>rooms\dgn1_B7</room>
       <room>rooms\dgn1_C7</room>
       <room>rooms\dgn1_prep</room>
-      <room>rooms\dgn1_boss</room>
       <room>rooms\dgn1_fuzzballs</room>
       <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzAndFlowers</room>
