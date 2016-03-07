@@ -142,8 +142,8 @@
       <room>rooms\dgn1_bouncies</room>
       <room>rooms\dgn1_bouncyAndFuzzes</room>
       <room>rooms\dgn1_whiplash</room>
+      <room>rooms\dgn1_boss</room>
     </rooms>
-    <room>rooms\dgn1_boss</room>
     <room>rooms\gideonRoom</room>
     <rooms name="test1">
       <room>rooms\bullet_test</room>
