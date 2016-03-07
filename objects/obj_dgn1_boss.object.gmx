@@ -180,7 +180,7 @@ switch(pathid) {
             break;
         case 1:
             pathid = path_boss_3;
-            path_start(path_boss_3, 12, path_action_stop, true);
+            path_start(path_boss_3, 6, path_action_stop, true);
             break;
         case 2:
             pathid = path_boss_1;
