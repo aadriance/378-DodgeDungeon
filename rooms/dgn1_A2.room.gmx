@@ -7,7 +7,7 @@
   <hsnap>40</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_player" x="400" y="120" name="inst_B53E157F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="0" name="inst_E165B70A" locked="0" code="" scaleX="2" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="80" y="80" name="inst_4431A62E" locked="0" code="" scaleX="7" scaleY="-2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="440" y="0" name="inst_8723E559" locked="0" code="" scaleX="9" scaleY="2" colour="4294967295" rotation="0"/>
@@ -62,9 +61,9 @@
     <instance objName="obj_wall" x="0" y="360" name="inst_F60F4C5A" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="280" name="inst_4EAA5E7E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="360" y="520" name="inst_440BDF29" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_portal" x="760" y="280" name="inst_39AE50D3" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal" x="760" y="280" name="inst_39AE50D3" locked="0" code="roomList[0] = dgn1_B2;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="720" y="280" name="inst_B1A5508F" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_portal" x="360" y="0" name="inst_85E6B1D7" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal" x="360" y="0" name="inst_85E6B1D7" locked="0" code="roomList[0] = getPreviousRoom();&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="360" y="40" name="inst_A0A135F5" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzball" x="120" y="480" name="inst_B22CEC6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_ctrl" x="120" y="120" name="inst_2A676709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

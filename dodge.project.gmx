@@ -113,16 +113,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\gideonRoom</room>
-    <rooms name="DoorTest">
-      <room>rooms\rm_door_test_c</room>
-      <room>rooms\rm_door_test_d</room>
-      <room>rooms\rm_door_test_u</room>
-      <room>rooms\rm_door_test_r</room>
-      <room>rooms\rm_door_test_l</room>
-    </rooms>
     <rooms name="dgn1">
-      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_start_A1</room>
       <room>rooms\dgn1_A2</room>
       <room>rooms\dgn1_B2</room>
@@ -144,6 +135,7 @@
       <room>rooms\dgn1_C7</room>
       <room>rooms\dgn1_prep</room>
       <room>rooms\dgn1_boss</room>
+      <room>rooms\dgn1_crystals_lasers</room>
       <room>rooms\dgn1_fuzzballs</room>
       <room>rooms\dgn1_crystals_fast</room>
       <room>rooms\dgn1_fuzzAndFlowers</room>
@@ -151,6 +143,14 @@
       <room>rooms\dgn1_bouncies</room>
       <room>rooms\dgn1_bouncyAndFuzzes</room>
       <room>rooms\dgn1_whiplash</room>
+    </rooms>
+    <room>rooms\gideonRoom</room>
+    <rooms name="DoorTest">
+      <room>rooms\rm_door_test_c</room>
+      <room>rooms\rm_door_test_d</room>
+      <room>rooms\rm_door_test_u</room>
+      <room>rooms\rm_door_test_r</room>
+      <room>rooms\rm_door_test_l</room>
     </rooms>
     <rooms name="test1">
       <room>rooms\bullet_test</room>

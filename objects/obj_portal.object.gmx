@@ -53,12 +53,20 @@
    randomize();
    choice = floor(random(len));
 }
-if abs(other.hspeed) &lt; 1 {
-   other.x = room_width - other.x;
+
+if(x&lt;200){
+    other.x = room_width - sprite_width * 1.3;
 }
-if abs(other.vspeed) &lt; 1 {
-   other.y = room_height - other.y;
+if(x&gt;600){
+    other.x = sprite_width * 1.3;
 }
+if(y&lt;200){
+    other.y = room_height - sprite_height * 1.3;
+}
+if(y&gt;400){
+    other.y = sprite_height * 1.3;
+}
+
 room_goto(roomList[choice]);
 </string>
           </argument>
