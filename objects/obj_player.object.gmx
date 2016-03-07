@@ -88,28 +88,28 @@ var dx = 0;
 baseimgspd = 0.5;
 image_speed = 0;
 
-if keyboard_check(vk_left)
+if keyboard_check(vk_left) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dx = -moveRate;
    image_speed = baseimgspd;
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_l then sprite_index = spr_me_l;
    } 
-if keyboard_check(vk_right)
+if keyboard_check(vk_right) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dx = moveRate;
    image_speed = baseimgspd;
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_r then sprite_index = spr_me_r;
    }
-if keyboard_check(vk_up)
+if keyboard_check(vk_up) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dy = -moveRate;
    image_speed = baseimgspd;
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_u then sprite_index = spr_me_u;
    }
-if keyboard_check(vk_down)
+if keyboard_check(vk_down) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dy = moveRate;
    image_speed = baseimgspd;

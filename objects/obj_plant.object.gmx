@@ -30,7 +30,7 @@ num = 4;
 
 speed = 0;
 
-count = 0;
+count = 50;
 
 image_speed = 0.2;
 </string>
