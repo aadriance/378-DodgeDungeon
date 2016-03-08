@@ -24,6 +24,7 @@
       <sprite>sprites\spr_eyeplant</sprite>
       <sprite>sprites\spr_fuzz3</sprite>
       <sprite>sprites\spr_crystal</sprite>
+      <sprite>sprites\spr_ltcrystal</sprite>
       <sprite>sprites\spr_fuzz2</sprite>
       <sprite>sprites\spr_bouncy</sprite>
     </sprites>
