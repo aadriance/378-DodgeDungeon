@@ -56,13 +56,17 @@ attackType = 0;     //this gets changed from the crystal object as necessary
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var p = instance_nearest(x, y, obj_player);
+            <string>//aimed sunburst
+
+var p = instance_nearest(x, y, obj_player);
 var pdir = point_direction(x, y, p.x, p.y);
 
 for(i = 0; i &lt; num2; i += 1){
     b = instance_create(x, y, obj_basicbullet);
     b.sprite_index = spr_bullet_blue;
-    b.speed = 7;
+    b.speed = 6;
+    b.maxspeed = 7;
+    b.accel = 0.02;
     b.direction = pdir + i * 360/num2;
 }
 </string>

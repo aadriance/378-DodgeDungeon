@@ -102,7 +102,7 @@ if(count == 10){
     bull.speed = 2;
     bull.accel = -0.1;
     bull.minspd = 0.4;
-    bull.ttl = 50;
+    bull.ttl = 80;
     bull.sprite_index = spr_bullet_dark;
     set_bullet_parts(bull, 12, 15, c_black, 0.8);
     

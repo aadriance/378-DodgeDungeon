@@ -110,6 +110,7 @@ if(count == delay){
         bull.minspeed = 1;
         bull.ttl = 120;
         bull.sprite_index = spr_bullet_dark;
+        set_bullet_parts(bull, 12, 15, c_black, 0.8);
     }
     count = 0;
 }

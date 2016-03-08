@@ -87,13 +87,9 @@ starting = true;
             <string>movecount += 1;
 
 if(movecount == whenAttackWhileStationary &amp;&amp; myLife &gt; 0){
-    if(starting){
-        starting = false;
-    }else{
-        myEmitter.attackType = attackType;
-        with(myEmitter){
-            event_user(attackType);
-        }
+    myEmitter.attackType = attackType;
+    with(myEmitter){
+        event_user(attackType);
     }
 }
 
