@@ -117,10 +117,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\bullet_test</room>
     <rooms name="dgn1">
       <room>rooms\dgn1_start_A1</room>
-      <room>rooms\dgn1_C4</room>
       <room>rooms\dgn1_A2</room>
       <room>rooms\dgn1_B2</room>
       <room>rooms\dgn1_C2</room>
@@ -154,6 +152,7 @@
       </rooms>
     </rooms>
     <room>rooms\gideonRoom</room>
+    <room>rooms\bullet_test</room>
     <rooms name="test1">
       <room>rooms\room0</room>
       <room>rooms\rand2</room>
