@@ -136,9 +136,6 @@ image_alpha = 0.3;
         image_alpha = 1;
         if (!audio_is_playing(snd_laser_2)) {
             audio_play_sound(snd_laser_2, 1, false);
-            audio_play_sound(snd_laser_2, 2, false);
-            audio_play_sound(snd_laser_2, 3, false);
-            audio_play_sound(snd_laser_2, 4, false);
         }   
     }
 }
