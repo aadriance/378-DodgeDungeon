@@ -11,6 +11,8 @@
     <sound>sound\snd_dgn1_bgm</sound>
     <sound>sound\snd_laser</sound>
     <sound>sound\snd_laser_2</sound>
+    <sound>sound\snd_player_hit</sound>
+    <sound>sound\snd_sword_2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
