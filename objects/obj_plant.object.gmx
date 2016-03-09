@@ -26,15 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>enemy_create(self, obj_basicBulletEmitter);
-num = 5;
+num = 7;
 
 speed = 0;
 
-count = 50;
+count = 20;
 
 image_speed = 0.2;
 
-myLife = 2;
+myLife = 1;
 </string>
           </argument>
         </arguments>
@@ -73,10 +73,10 @@ myLife = 2;
             <kind>1</kind>
             <string>count += 1;
 
-if(count == 60 || count == 80 || count == 100){
+if(count == 70 || count == 110){
     event_user(0);
 }
-if(count == 120){
+if(count == 140){
     count = 0;
 }
 </string>
@@ -109,18 +109,18 @@ if(count == 120){
         bull.speed = 1;
         bull.accel = 0.1;
         bull.maxspeed = 5;
-        bull.angVelocity = 1;
+        bull.angVelocity = 0.5;
         bull.sprite_index = spr_bullet_green;
-        set_bullet_parts(bull, 12, 15, c_lime, 0.8);
+        set_bullet_parts(bull, 12, 15, c_lime, 0.6);
         
         bull = instance_create(x, y, obj_basicbullet);
         bull.direction = dir + 360*i/num;
         bull.speed = 1;
         bull.accel = 0.1;
         bull.maxspeed = 5;
-        bull.angVelocity = -1;
+        bull.angVelocity = -0.5;
         bull.sprite_index = spr_bullet_red;
-        set_bullet_parts(bull, 12, 15, c_red, 0.8);
+        set_bullet_parts(bull, 12, 15, c_red, 0.6);
     }
 </string>
           </argument>

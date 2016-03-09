@@ -106,11 +106,11 @@ if(count == delay){
         bull = instance_create(x, y, obj_basicbullet);
         bull.direction = dir + i*360/num;
         bull.speed = 8;
-        bull.accel = -0.3;
+        bull.accel = -0.4;
         bull.minspeed = 1;
         bull.ttl = 120;
         bull.sprite_index = spr_bullet_dark;
-        set_bullet_parts(bull, 12, 15, c_black, 0.8);
+        set_bullet_parts(bull, 12, 15, c_black, 0.6);
     }
     count = 0;
 }

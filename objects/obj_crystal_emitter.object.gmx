@@ -68,7 +68,7 @@ for(i = 0; i &lt; num2; i += 1){
     b.maxspeed = 7;
     b.accel = 0.02;
     b.direction = pdir + i * 360/num2;
-    set_bullet_parts(b, 12, 15, c_aqua, 0.8);
+    set_bullet_parts(b, 12, 15, c_aqua, 0.4);
 }
 </string>
           </argument>
@@ -109,7 +109,7 @@ for(i = 0; i &lt; num2; i += 1){
     b.speed = 0.5;
     b.maxspeed = 8;
     b.accel = 0.02;
-    set_bullet_parts(b, 12, 15, c_navy, 0.8);
+    set_bullet_parts(b, 12, 15, c_navy, 0.7);
 }
 </string>
           </argument>

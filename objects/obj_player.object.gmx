@@ -234,7 +234,7 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.active == 0 &amp;&amp; invul &lt; 1){
+            <string>if(other.active == true &amp;&amp; invul &lt; 1){
     lives -=1;
     invul = 6;
 }
