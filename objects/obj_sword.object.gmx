@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>inUse = false;
+audio_play_sound(snd_sword_2, 1, false);
 </string>
           </argument>
         </arguments>

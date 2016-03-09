@@ -252,6 +252,7 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
           <argument>
             <kind>1</kind>
             <string>if(other.active == true &amp;&amp; invul &lt; 1){
+    audio_play_sound(snd_player_hit, 1, false);
     lives -=1;
     invul = 6;
 }
@@ -278,6 +279,7 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
           <argument>
             <kind>1</kind>
             <string>if(invul &lt; 1){
+    audio_play_sound(snd_player_hit, 1, false);
     lives -=1;
     invul = 8;
 }
