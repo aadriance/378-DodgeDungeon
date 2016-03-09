@@ -8,6 +8,7 @@
     <sound>sound\snd_walk</sound>
     <sound>sound\snd_sword</sound>
     <sound>sound\snd_enemy_hit</sound>
+    <sound>sound\snd_dgn1_bgm</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
