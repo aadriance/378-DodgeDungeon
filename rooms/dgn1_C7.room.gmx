@@ -67,11 +67,11 @@
     <instance objName="obj_portal" x="0" y="280" name="inst_04B01829" locked="0" code="roomList[0] = dgn1_B7;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="360" y="40" name="inst_1F38C7E2" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal" x="360" y="0" name="inst_1428A7AC" locked="0" code="roomList[0] = dgn1_prep_C6;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bouncy" x="480" y="120" name="inst_9D6FB460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bouncy" x="480" y="480" name="inst_07C672B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_crystal_fast" x="680" y="440" name="inst_9D5D644A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzball" x="160" y="480" name="inst_4A6D765B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_crystal_fast" x="680" y="160" name="inst_71790E2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crystal_fast" x="680" y="480" name="inst_71790E2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fuzzbro" x="480" y="120" name="inst_383427B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fuzzball" x="680" y="120" name="inst_8C136C22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="0" w="40" h="40" xo="0" yo="0" id="10000001" name="inst_77DCA754" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
