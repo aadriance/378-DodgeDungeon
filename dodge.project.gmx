@@ -115,6 +115,7 @@
       <object>objects\obj_anim_blast</object>
       <object>objects\obj_anim_effect</object>
     </objects>
+    <object>objects\healthUp</object>
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
@@ -152,14 +153,6 @@
       </rooms>
     </rooms>
     <room>rooms\gideonRoom</room>
-    <room>rooms\bullet_test</room>
-    <rooms name="test1">
-      <room>rooms\room0</room>
-      <room>rooms\rand2</room>
-      <room>rooms\zigzag_room</room>
-      <room>rooms\room10</room>
-      <room>rooms\rand1</room>
-    </rooms>
     <room>rooms\rm_gameOver</room>
   </rooms>
   <help>

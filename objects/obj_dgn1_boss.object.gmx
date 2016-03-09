@@ -36,6 +36,8 @@ path_start(path_boss_1, 12, path_action_stop, true);
 enemy_create(self, obj_shotgun);
 //bulletPattern = instance_create(x, y, obj_basicBulletEmitter);
 //bulletPattern.patternType = attackType;
+
+myLife = 9;
 </string>
           </argument>
         </arguments>

@@ -33,7 +33,6 @@ moveRate = 6;
 dashLevel = 100;
 isDashing = false;
 dashModifier = 2.5;
-dashCool = 0;
 dashRate = 16;
 
 swordCool = 0;
@@ -141,7 +140,7 @@ if keyboard_check(vk_down) &amp;&amp; !keyboard_check(ord('Z'))
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
 
-if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= dashRate &amp;&amp; dashCool == 0 &amp;&amp; image_speed &gt; 0 {
+if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt; 1 &amp;&amp; (dashLevel &gt;= 95 || isDashing) &amp;&amp; image_speed &gt; 0 {
    isDashing = true;
    invul = 3;
 }
@@ -153,15 +152,9 @@ if (isDashing) {
    dx *= dashModifier;
    dy *= dashModifier;
    dashLevel -= dashRate;
-   if dashLevel == 0 {
-      dashCool = 60;
-   }
 }   
 else {
    dashLevel += dashRate/8;
-   if dashCool &gt; 0 {
-     dashCool -= 1;
-   }
 }
    
 if(place_free(x+dx, y)){
@@ -377,6 +370,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>lastRoom = room;
+isDashing = false;
 </string>
           </argument>
         </arguments>
@@ -385,29 +379,21 @@ instance_destroy();
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
-        <id>714</id>
+        <id>524</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_draw_life_images</functionname>
+        <functionname>action_color</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>90</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>20</string>
-          </argument>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_me_d</sprite>
+            <kind>13</kind>
+            <string>16777215</string>
           </argument>
         </arguments>
       </action>
@@ -427,7 +413,7 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>Health:</string>
+            <string>HP ::</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -458,6 +444,8 @@ instance_destroy();
             <string>if(dashLevel &lt; 100){
    draw_healthbar_circular(x, y, sprite_width, 0, dashLevel, spr_staminabar);
 }
+
+draw_text(55,20, lives)
 </string>
           </argument>
         </arguments>
