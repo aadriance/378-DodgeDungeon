@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>delay = 20;
-arms = 6;
+arms = 5;
 bullspeed = 6;
 angularChange = -7;
 baseAng = random_range(0,359);
@@ -66,6 +66,7 @@ if(count == delay){
         b.sprite_index = spr_bullet_red;
         b.speed = bullspeed;
         b.direction = dir;
+        set_bullet_parts(b, 12, 15, c_ltgray, 0.4);
     }
     count = 0;
     baseAng += angularChange;

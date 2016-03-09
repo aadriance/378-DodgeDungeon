@@ -101,10 +101,10 @@ if(count == 10){
     bull.direction = irandom(359);
     bull.speed = 2;
     bull.accel = -0.1;
-    bull.minspd = 0.4;
-    bull.ttl = 50;
+    bull.minspd = 0.5;
+    bull.ttl = 100;
     bull.sprite_index = spr_bullet_dark;
-    set_bullet_parts(bull, 12, 15, c_black, 0.8);
+    set_bullet_parts(bull, 12, 15, c_black, 0.7);
     
     count = 0;
 }

@@ -24,6 +24,7 @@
       <sprite>sprites\spr_eyeplant</sprite>
       <sprite>sprites\spr_fuzz3</sprite>
       <sprite>sprites\spr_crystal</sprite>
+      <sprite>sprites\spr_ltcrystal</sprite>
       <sprite>sprites\spr_fuzz2</sprite>
       <sprite>sprites\spr_bouncy</sprite>
     </sprites>
@@ -114,35 +115,38 @@
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
+      <room>rooms\dgn1_C4</room>
       <room>rooms\dgn1_start_A1</room>
       <room>rooms\dgn1_A2</room>
       <room>rooms\dgn1_B2</room>
       <room>rooms\dgn1_C2</room>
       <room>rooms\dgn1_D2</room>
-      <room>rooms\dgn1_A4</room>
       <room>rooms\dgn1_A3</room>
       <room>rooms\dgn1_B3</room>
       <room>rooms\dgn1_C3</room>
+      <room>rooms\dgn1_A4</room>
       <room>rooms\dgn1_B4</room>
-      <room>rooms\dgn1_C4</room>
       <room>rooms\dgn1_D4</room>
       <room>rooms\dgn1_A5</room>
       <room>rooms\dgn1_B5</room>
       <room>rooms\dgn1_C5</room>
       <room>rooms\dgn1_A6</room>
+      <room>rooms\dgn1_B6</room>
       <room>rooms\dgn1_A7</room>
       <room>rooms\dgn1_B7</room>
       <room>rooms\dgn1_C7</room>
-      <room>rooms\dgn1_prep</room>
-      <room>rooms\dgn1_crystals_lasers</room>
-      <room>rooms\dgn1_fuzzballs</room>
-      <room>rooms\dgn1_crystals_fast</room>
-      <room>rooms\dgn1_fuzzAndFlowers</room>
-      <room>rooms\dgn1_fuzzbros</room>
-      <room>rooms\dgn1_bouncies</room>
-      <room>rooms\dgn1_bouncyAndFuzzes</room>
-      <room>rooms\dgn1_whiplash</room>
-      <room>rooms\dgn1_boss</room>
+      <room>rooms\dgn1_prep_C6</room>
+      <room>rooms\dgn1_boss_C6</room>
+      <rooms name="test rooms">
+        <room>rooms\dgn1_whiplash</room>
+        <room>rooms\dgn1_fuzzballs</room>
+        <room>rooms\dgn1_crystals_fast</room>
+        <room>rooms\dgn1_crystals_lasers</room>
+        <room>rooms\dgn1_fuzzAndFlowers</room>
+        <room>rooms\dgn1_fuzzbros</room>
+        <room>rooms\dgn1_bouncies</room>
+        <room>rooms\dgn1_bouncyAndFuzzes</room>
+      </rooms>
     </rooms>
     <room>rooms\gideonRoom</room>
     <rooms name="test1">
