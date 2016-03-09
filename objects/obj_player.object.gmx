@@ -280,11 +280,11 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
             <string>if(invul &lt; 1){
     lives -=1;
     invul = 8;
+    with(other){
+      instance_destroy();
+    }
 }
 
-with(other){
-   instance_destroy();
-}
 </string>
           </argument>
         </arguments>
