@@ -68,7 +68,6 @@
     <instance objName="obj_crystal_slow" x="680" y="480" name="inst_F4A3BC7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal_fast" x="640" y="440" name="inst_D0333FC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_ctrl" x="240" y="200" name="inst_5BFC75EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_crystal_slow" x="680" y="120" name="inst_1E549FD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal_fast" x="160" y="440" name="inst_2F8A784C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal_fast" x="120" y="120" name="inst_8F35C7F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
