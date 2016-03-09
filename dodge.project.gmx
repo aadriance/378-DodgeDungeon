@@ -9,6 +9,8 @@
     <sound>sound\snd_sword</sound>
     <sound>sound\snd_enemy_hit</sound>
     <sound>sound\snd_dgn1_bgm</sound>
+    <sound>sound\snd_laser</sound>
+    <sound>sound\snd_laser_2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -115,9 +117,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\bullet_test</room>
     <rooms name="dgn1">
-      <room>rooms\dgn1_C4</room>
       <room>rooms\dgn1_start_A1</room>
+      <room>rooms\dgn1_C4</room>
       <room>rooms\dgn1_A2</room>
       <room>rooms\dgn1_B2</room>
       <room>rooms\dgn1_C2</room>
@@ -151,7 +154,6 @@
     </rooms>
     <room>rooms\gideonRoom</room>
     <rooms name="test1">
-      <room>rooms\bullet_test</room>
       <room>rooms\room0</room>
       <room>rooms\rand2</room>
       <room>rooms\zigzag_room</room>
