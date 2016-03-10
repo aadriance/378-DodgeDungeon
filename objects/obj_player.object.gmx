@@ -32,9 +32,8 @@ mySword.visible = false;
 moveRate = 6;
 dashLevel = 100;
 isDashing = false;
-dashModifier = 1.5;
-dashCool = 0;
-dashRate = 8;
+dashModifier = 2.5;
+dashRate = 16;
 
 swordCool = 0;
 invul = 0;
@@ -65,6 +64,30 @@ randomize();
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_dgn1_bgm</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -88,28 +111,28 @@ var dx = 0;
 baseimgspd = 0.5;
 image_speed = 0;
 
-if keyboard_check(vk_left)
+if keyboard_check(vk_left) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dx = -moveRate;
    image_speed = baseimgspd;
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_l then sprite_index = spr_me_l;
    } 
-if keyboard_check(vk_right)
+if keyboard_check(vk_right) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dx = moveRate;
    image_speed = baseimgspd;
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_r then sprite_index = spr_me_r;
    }
-if keyboard_check(vk_up)
+if keyboard_check(vk_up) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dy = -moveRate;
    image_speed = baseimgspd;
    if !audio_is_playing(snd_walk) then audio_play_sound(snd_walk, 0, 0);
    if sprite_index != spr_me_u then sprite_index = spr_me_u;
    }
-if keyboard_check(vk_down)
+if keyboard_check(vk_down) &amp;&amp; !keyboard_check(ord('Z'))
    {
    dy = moveRate;
    image_speed = baseimgspd;
@@ -117,7 +140,7 @@ if keyboard_check(vk_down)
    if sprite_index != spr_me_d then sprite_index = spr_me_d;
    }
 
-if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt;= dashRate &amp;&amp; dashCool == 0 {
+if keyboard_check(vk_shift) &amp;&amp; dashLevel &gt; 1 &amp;&amp; (dashLevel &gt;= 95 || isDashing) &amp;&amp; image_speed &gt; 0 {
    isDashing = true;
    invul = 3;
 }
@@ -129,15 +152,9 @@ if (isDashing) {
    dx *= dashModifier;
    dy *= dashModifier;
    dashLevel -= dashRate;
-   if dashLevel == 0 {
-      dashCool = 20;
-   }
 }   
 else {
-   dashLevel += dashRate/4;
-   if dashCool &gt; 0 {
-     dashCool -= 1;
-   }
+   dashLevel += dashRate/8;
 }
    
 if(place_free(x+dx, y)){
@@ -234,7 +251,8 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.active == 0 &amp;&amp; invul &lt; 1){
+            <string>if(other.active == true &amp;&amp; invul &lt; 1){
+    audio_play_sound(snd_player_hit, 1, false);
     lives -=1;
     invul = 6;
 }
@@ -261,13 +279,14 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
           <argument>
             <kind>1</kind>
             <string>if(invul &lt; 1){
+    audio_play_sound(snd_player_hit, 1, false);
     lives -=1;
     invul = 8;
+    with(other){
+      instance_destroy();
+    }
 }
 
-with(other){
-   instance_destroy();
-}
 </string>
           </argument>
         </arguments>
@@ -296,6 +315,20 @@ with(other){
       </action>
     </event>
     <event eventtype="7" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>obj_basicbullet</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -339,6 +372,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>lastRoom = room;
+isDashing = false;
 </string>
           </argument>
         </arguments>
@@ -347,29 +381,21 @@ instance_destroy();
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
-        <id>714</id>
+        <id>524</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_draw_life_images</functionname>
+        <functionname>action_color</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>90</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>20</string>
-          </argument>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_me_d</sprite>
+            <kind>13</kind>
+            <string>16777215</string>
           </argument>
         </arguments>
       </action>
@@ -389,7 +415,7 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>Health:</string>
+            <string>HP ::</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -420,6 +446,8 @@ instance_destroy();
             <string>if(dashLevel &lt; 100){
    draw_healthbar_circular(x, y, sprite_width, 0, dashLevel, spr_staminabar);
 }
+
+draw_text(55,20, lives)
 </string>
           </argument>
         </arguments>

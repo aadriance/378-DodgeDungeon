@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>rotateAngle = 1;   
 curBullet = 0;                 
-bulletSpacing = 6
+bulletSpacing = 8;
 numBullets = 120;      
 pauseDelay = 130;        
 bulletAngle = 0;

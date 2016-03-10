@@ -27,11 +27,14 @@
             <kind>1</kind>
             <string>event_inherited();
 
-moverate = 20;
+whenAttackWhileStationary = 10;
 stationaryTime = 60;
+moverate = 20;
+
 maxDist = 250;
 attackType = 1;
-whenAttackWhileStationary = 10;
+
+movecount = 30;
 </string>
           </argument>
         </arguments>

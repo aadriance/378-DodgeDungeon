@@ -134,6 +134,9 @@ image_alpha = 0.3;
         active = true;
         image_speed = 1;
         image_alpha = 1;
+        if (!audio_is_playing(snd_laser_2)) {
+            audio_play_sound(snd_laser_2, 1, false);
+        }   
     }
 }
 

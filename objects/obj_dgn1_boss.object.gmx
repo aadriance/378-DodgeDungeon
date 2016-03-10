@@ -36,6 +36,8 @@ path_start(path_boss_1, 12, path_action_stop, true);
 enemy_create(self, obj_shotgun);
 //bulletPattern = instance_create(x, y, obj_basicBulletEmitter);
 //bulletPattern.patternType = attackType;
+
+myLife = 9;
 </string>
           </argument>
         </arguments>
@@ -83,7 +85,7 @@ switch(pathid) {
             if (!instance_exists(obj_spiral_cw))
                 instance_create(x, y, obj_spiral_cw);
         }
-        if (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.755)  {
+        if (curPlace &gt;= 0.75 &amp;&amp; curPlace &lt;= 0.76)  {
             if (!instance_exists(obj_spiral_ccw))
                 instance_create(x, y, obj_spiral_ccw);
         }
@@ -145,7 +147,7 @@ switch(pathid) {
                 path_speed = 0;
             }
             else {
-                path_speed = 12;
+                path_speed = 4;
                 delay = 30;
             }
         }
@@ -180,7 +182,7 @@ switch(pathid) {
             break;
         case 1:
             pathid = path_boss_3;
-            path_start(path_boss_3, 12, path_action_stop, true);
+            path_start(path_boss_3, 6, path_action_stop, true);
             break;
         case 2:
             pathid = path_boss_1;

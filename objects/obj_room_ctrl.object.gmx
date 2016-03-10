@@ -28,7 +28,6 @@
             <string>//enemies will notify room_ctrl of their death
 
 enems = instance_number(obj_enemy);
-show_debug_message(enems);
 if(enems == 1){     //the last one to die
     while(instance_exists(obj_door)){
         with(instance_find(obj_door, 0)){
