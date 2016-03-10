@@ -116,6 +116,7 @@
       <object>objects\obj_persistent_spiral</object>
     </objects>
     <object>objects\obj_game_over</object>
+    <object>objects\obj_instructions</object>
     <object>objects\obj_win</object>
     <objects name="effects">
       <object>objects\obj_anim_blast</object>
@@ -125,6 +126,7 @@
     <object>objects\obj_big_health</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_instructions</room>
     <rooms name="dgn1">
       <room>rooms\dgn1_start_A1</room>
       <room>rooms\dgn1_A2</room>
