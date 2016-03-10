@@ -13,6 +13,7 @@
     <sound>sound\snd_laser_2</sound>
     <sound>sound\snd_player_hit</sound>
     <sound>sound\snd_sword_2</sound>
+    <sound>sound\snd_heal</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -115,6 +116,7 @@
       <object>objects\obj_persistent_spiral</object>
     </objects>
     <object>objects\obj_game_over</object>
+    <object>objects\obj_win</object>
     <objects name="effects">
       <object>objects\obj_anim_blast</object>
       <object>objects\obj_anim_effect</object>
@@ -159,6 +161,7 @@
     </rooms>
     <room>rooms\gideonRoom</room>
     <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
