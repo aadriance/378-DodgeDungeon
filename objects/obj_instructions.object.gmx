@@ -49,8 +49,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_red);
-draw_text(room_width/2, y, "GAME OVER#PRESS Z TO RESTART");
+            <string>draw_set_color(c_white);
+draw_text(room_width/2, y, "DODGE DUNGEON##Z to attack#SHIFT to dash#Dashing grants brief invulnerability");
+draw_set_color(c_red);
+draw_text(room_width/2, y+250, "PRESS Z TO START");
 </string>
           </argument>
         </arguments>
@@ -73,7 +75,7 @@ draw_text(room_width/2, y, "GAME OVER#PRESS Z TO RESTART");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>room_goto(dgn1_start_A1);
 </string>
           </argument>
         </arguments>
