@@ -154,7 +154,9 @@ if (isDashing) {
    dashLevel -= dashRate;
 }   
 else {
-   dashLevel += dashRate/8;
+   if dashLevel &lt; 100 {
+      dashLevel += dashRate/8;
+   }
 }
    
 if(place_free(x+dx, y)){
@@ -229,6 +231,7 @@ if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
     sw.image_angle = myDir;
     swordCool = 8;
 }
+
 </string>
           </argument>
         </arguments>
@@ -401,34 +404,6 @@ isDashing = false;
       </action>
       <action>
         <libid>1</libid>
-        <id>514</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_text</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>HP ::</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>5</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>20</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -446,8 +421,9 @@ isDashing = false;
             <string>if(dashLevel &lt; 100){
    draw_healthbar_circular(x, y, sprite_width, 0, dashLevel, spr_staminabar);
 }
-
-draw_text(55,20, lives)
+draw_set_halign(fa_center)
+draw_sprite(spr_small_health,0,25 - 20,25 - 10)
+draw_text(25,25, lives)
 </string>
           </argument>
         </arguments>

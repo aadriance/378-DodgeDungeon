@@ -50,6 +50,8 @@
     <sprite>sprites\spr_staminabar</sprite>
     <sprite>sprites\spr_slash</sprite>
     <sprite>sprites\spr_splash</sprite>
+    <sprite>sprites\spr_small_health</sprite>
+    <sprite>sprites\spr_big_health</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -117,7 +119,8 @@
       <object>objects\obj_anim_blast</object>
       <object>objects\obj_anim_effect</object>
     </objects>
-    <object>objects\healthUp</object>
+    <object>objects\obj_small_health</object>
+    <object>objects\obj_big_health</object>
   </objects>
   <rooms name="rooms">
     <rooms name="dgn1">
