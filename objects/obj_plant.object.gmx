@@ -76,7 +76,7 @@ myLife = 1;
 if(count == 70 || count == 110){
     event_user(0);
 }
-if(count == 140){
+if(count == 150){
     count = 0;
 }
 </string>
