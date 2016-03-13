@@ -27,12 +27,18 @@
     <sprite>sprites\spr_portal</sprite>
     <sprites name="enemies">
       <sprite>sprites\spr_fuzzball</sprite>
-      <sprite>sprites\spr_eyeplant</sprite>
-      <sprite>sprites\spr_fuzz3</sprite>
-      <sprite>sprites\spr_crystal</sprite>
-      <sprite>sprites\spr_ltcrystal</sprite>
       <sprite>sprites\spr_fuzz2</sprite>
+      <sprite>sprites\spr_fuzz3</sprite>
+      <sprite>sprites\spr_eyeplant</sprite>
+      <sprite>sprites\spr_eyeplant2</sprite>
+      <sprite>sprites\spr_crystal</sprite>
+      <sprite>sprites\spr_crystal_g</sprite>
+      <sprite>sprites\spr_ltcrystal</sprite>
       <sprite>sprites\spr_bouncy</sprite>
+      <sprite>sprites\spr_slime</sprite>
+      <sprite>sprites\spr_mage_idle</sprite>
+      <sprite>sprites\spr_mage_red</sprite>
+      <sprite>sprites\spr_mage_blue</sprite>
     </sprites>
     <sprites name="spr_me">
       <sprite>sprites\spr_me_d</sprite>
@@ -56,6 +62,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_boss_1</path>
@@ -94,7 +101,9 @@
       <object>objects\obj_plant</object>
       <object>objects\obj_crystal_fast</object>
       <object>objects\obj_crystal_slow</object>
+      <object>objects\obj_crystal_g</object>
       <object>objects\obj_bouncy</object>
+      <object>objects\object38</object>
       <object>objects\obj_dgn1_boss</object>
       <object>objects\fuzzSpawner1</object>
       <object>objects\obj_enemy</object>
@@ -126,6 +135,9 @@
     <object>objects\obj_big_health</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="dgn2">
+      <room>rooms\dgn2_start</room>
+    </rooms>
     <room>rooms\rm_instructions</room>
     <rooms name="dgn1">
       <room>rooms\dgn1_start_A1</room>

@@ -31,9 +31,46 @@ crystal = 0;
 
 num0 = 16;
 num1 = 4;
-num2 = 8;
+num2 = 7;
 
 attackType = 0;     //this gets changed from the crystal object as necessary
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//bouncing X
+
+var offset = 45;
+var num3 = 4;
+
+for(i = 0; i &lt; num3; i += 1){
+    for(j = 0; j &lt; 3; j+=1){
+        b = instance_create(x, y, obj_basicbullet);
+        b.sprite_index = spr_bullet_green;
+        b.speed = 5.2+j*0.6;
+        b.direction = offset + i * 360/num3;
+        b.numBounces = 2;
+        set_bullet_parts(b, 12, 15, c_lime, 0.4);
+    }
+}
 </string>
           </argument>
         </arguments>
