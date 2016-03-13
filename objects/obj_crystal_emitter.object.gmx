@@ -31,7 +31,7 @@ crystal = 0;
 
 num0 = 16;
 num1 = 4;
-num2 = 8;
+num2 = 7;
 
 attackType = 0;     //this gets changed from the crystal object as necessary
 </string>

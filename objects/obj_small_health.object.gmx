@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives += 2;
+            <string>lives += 3;
 instance_destroy();
 </string>
           </argument>
