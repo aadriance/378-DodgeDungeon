@@ -81,7 +81,7 @@ randomize();
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>snd_dgn1_bgm</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -233,7 +233,7 @@ if(transparent &gt; 0){
             <string>if(swordCool&gt;0){
     swordCool -= 1;
 }
-if (keyboard_check_pressed(ord('Z')) &amp;&amp; swordCool == 0) {
+if ((keyboard_check_pressed(ord('Z')) || keyboard_check_pressed(vk_space)) &amp;&amp; swordCool == 0) {
     sw = instance_create(x, y, obj_sword);
     sw.image_angle = myDir;
     swordCool = 8;
@@ -431,7 +431,7 @@ isDashing = false;
    draw_healthbar_circular(x, y, sprite_width, 0, dashLevel, spr_staminabar);
 }
 draw_set_halign(fa_center)
-draw_sprite(spr_small_health,0,25 - 20,25 - 10)
+draw_sprite(spr_small_health,0,25 - 15,25 - 10)
 draw_text(25,25, lives)
 </string>
           </argument>
