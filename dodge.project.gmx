@@ -133,12 +133,21 @@
     </objects>
     <object>objects\obj_small_health</object>
     <object>objects\obj_big_health</object>
+    <objects name="introText">
+      <object>objects\room01_instr</object>
+      <object>objects\room01_story</object>
+      <object>objects\room02_story</object>
+      <object>objects\room_2_instr</object>
+      <object>objects\room03_story</object>
+      <object>objects\room03_instr</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="dgn2">
-      <room>rooms\dgn2_start</room>
+    <rooms name="dgn0">
+      <room>rooms\dgn0_start</room>
+      <room>rooms\dgn0_01</room>
+      <room>rooms\dgn0_02</room>
     </rooms>
-    <room>rooms\rm_instructions</room>
     <rooms name="dgn1">
       <room>rooms\dgn1_start_A1</room>
       <room>rooms\dgn1_A2</room>
@@ -173,6 +182,10 @@
         <room>rooms\dgn1_bouncyAndFuzzes</room>
       </rooms>
     </rooms>
+    <rooms name="dgn2">
+      <room>rooms\dgn2_start</room>
+    </rooms>
+    <room>rooms\rm_instructions</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\rm_gameOver</room>
     <room>rooms\rm_win</room>
