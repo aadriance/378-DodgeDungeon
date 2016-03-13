@@ -141,8 +141,16 @@
       <object>objects\room03_story</object>
       <object>objects\room03_instr</object>
     </objects>
+    <objects name="mainMenu">
+      <object>objects\obj_title</object>
+      <object>objects\obj_level1_button</object>
+      <object>objects\obj_leve2_button</object>
+      <object>objects\obj_level3_button</object>
+    </objects>
+    <object>objects\obj_unlockdungeon_1</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\mainMenu</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
