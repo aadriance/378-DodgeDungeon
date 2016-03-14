@@ -51,6 +51,7 @@
       <sprite>sprites\spr_laser_blue</sprite>
       <sprite>sprites\spr_bullet_red</sprite>
       <sprite>sprites\spr_bullet_green</sprite>
+      <sprite>sprites\spr_bullet_forest</sprite>
       <sprite>sprites\spr_bullet_blue</sprite>
       <sprite>sprites\spr_bullet_dark</sprite>
     </sprites>
@@ -97,6 +98,7 @@
     <object>objects\obj_basiclaser</object>
     <objects name="enemies">
       <object>objects\obj_fuzzball</object>
+      <object>objects\obj_slime</object>
       <object>objects\obj_fuzzbro</object>
       <object>objects\obj_plant</object>
       <object>objects\obj_crystal_fast</object>
@@ -150,6 +152,10 @@
     <object>objects\obj_unlockdungeon_1</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="dgn2">
+      <room>rooms\dgn2_start_c6</room>
+      <room>rooms\dgn2_c5</room>
+    </rooms>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
@@ -188,9 +194,6 @@
         <room>rooms\dgn1_bouncies</room>
         <room>rooms\dgn1_bouncyAndFuzzes</room>
       </rooms>
-    </rooms>
-    <rooms name="dgn2">
-      <room>rooms\dgn2_start</room>
     </rooms>
     <room>rooms\mainMenu</room>
     <room>rooms\rm_instructions</room>
