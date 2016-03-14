@@ -150,7 +150,6 @@
     <object>objects\obj_unlockdungeon_1</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\mainMenu</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
@@ -193,6 +192,7 @@
     <rooms name="dgn2">
       <room>rooms\dgn2_start</room>
     </rooms>
+    <room>rooms\mainMenu</room>
     <room>rooms\rm_instructions</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\rm_gameOver</room>
