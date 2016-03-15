@@ -81,7 +81,7 @@ randomize();
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>-100</sound>
+            <sound>snd_dgn1_bgm</sound>
           </argument>
           <argument>
             <kind>3</kind>
