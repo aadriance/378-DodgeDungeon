@@ -34,7 +34,7 @@ direction = irandom(359);
 
 myLife = 2;
 
-num = 10;
+num = 9;
 minx = 100;
 maxx = room_width - 100;
 enemy_create(self, obj_basicBulletEmitter);

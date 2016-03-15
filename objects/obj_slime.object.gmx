@@ -118,14 +118,18 @@ if(movecount % 4 == 0){
 
 if(count == shotCool){
     var p = instance_find(obj_player, 0);
-    var ang = point_direction(x, y, p.x, p.y);
+    var ang = point_direction(x, y, p.x, p.y) + irandom_range(-20,20);
     
-    for(i=0; i&lt;3; i++){
-        bull = instance_create(x, y, obj_basicbullet);
-        bull.direction = ang + i*3 -3;
-        bull.speed = 6;
-        bull.sprite_index = spr_bullet_green;
-        set_bullet_parts(bull, 12, 15, c_green, 0.7);
+    for(j=0; j&lt;3; j++){
+        for(i=0; i&lt;3; i++){
+            bull = instance_create(x, y, obj_basicbullet);
+            bull.direction = ang + j*360/3 + i*2;
+            bull.speed = 0.5;
+            bull.maxspeed = 8;
+            bull.accel = 0.05;
+            bull.sprite_index = spr_bullet_dark;
+            set_bullet_parts(bull, 12, 15, c_green, 0.7);
+        }
     }
     
     count = 0;
