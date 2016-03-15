@@ -37,6 +37,7 @@
       <sprite>sprites\spr_bouncy</sprite>
       <sprite>sprites\spr_slime</sprite>
       <sprite>sprites\spr_mage_idle</sprite>
+      <sprite>sprites\spr_bluemage_idle</sprite>
       <sprite>sprites\spr_mage_red</sprite>
       <sprite>sprites\spr_mage_blue</sprite>
     </sprites>
@@ -61,6 +62,7 @@
     <sprite>sprites\spr_splash</sprite>
     <sprite>sprites\spr_small_health</sprite>
     <sprite>sprites\spr_big_health</sprite>
+    <sprite>sprites\spr_pop</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -96,6 +98,7 @@
     </objects>
     <object>objects\obj_sword</object>
     <object>objects\obj_basicbullet</object>
+    <object>objects\obj_homing</object>
     <object>objects\obj_basiclaser</object>
     <objects name="enemies">
       <object>objects\obj_fuzzball</object>
@@ -107,6 +110,7 @@
       <object>objects\obj_crystal_g</object>
       <object>objects\obj_bouncy</object>
       <object>objects\obj_mage_red</object>
+      <object>objects\obj_mage_blue</object>
       <object>objects\obj_dgn1_boss</object>
       <object>objects\fuzzSpawner1</object>
       <object>objects\obj_enemy</object>
@@ -132,6 +136,7 @@
     <object>objects\obj_win</object>
     <objects name="effects">
       <object>objects\obj_anim_blast</object>
+      <object>objects\obj_anim_pop</object>
       <object>objects\obj_anim_effect</object>
     </objects>
     <object>objects\obj_small_health</object>
