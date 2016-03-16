@@ -33,13 +33,15 @@ count = 20;
 
 image_speed = 0.1;
 
-myLife = 10;
+myLife = 30;
 
 num = 7;
 atk1 = 100;
 atk2 = 300;
-atk3 = 650;
+atk3 = 600;
 reset = 900;
+
+charging = 0;
 </string>
           </argument>
         </arguments>
@@ -78,6 +80,9 @@ reset = 900;
             <kind>1</kind>
             <string>count += 1;
 
+if(count==atk1 - 20){
+    charging = 20;
+}
 if(count==atk1 || count==atk1+30){
     dir=irandom(359);
     num=20;
@@ -95,10 +100,16 @@ if(count==atk1+90){
     event_user(1);
 }
 
+if(count==atk2 - 20){
+    charging = 20;
+}
 if(count==atk2){
     dir=irandom(359);
-    num=25;
-    event_user(2);
+}
+if(count&gt;=atk2 &amp;&amp; count&lt;atk2+80 &amp;&amp; count%30==0){
+    var e = instance_create(x,y,obj_boss2Emitter);
+    e.dir = dir;
+    dir += (360/6)/3;
 }
 if(count&gt;=atk2+60 &amp;&amp; count&lt;atk2+200 &amp;&amp; count%25==0){
     dir=irandom(359);
@@ -106,17 +117,85 @@ if(count&gt;=atk2+60 &amp;&amp; count&lt;atk2+200 &amp;&amp; count%25==0){
     event_user(3);
 }
 
+if(count==atk3 - 20){
+    charging = 20;
+}
 if(count==atk3){
     dir = irandom(359);
-    num = 20;
+    num = 18;
 }
-if(count&gt;=atk3 &amp;&amp; count&lt;atk3+200 &amp;&amp; count%10==0){
-    dir += (360/15)/3;
+if(count&gt;=atk3 &amp;&amp; count&lt;atk3+250 &amp;&amp; count%10==0){
+    dir += (360/18)/3;
     event_user(4);
 }
+if(count==atk3+150){
+    event_user(5);
+}
+
 if(count==reset){
     count=0;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(charging&gt;0){
+    if(sprite_index != spr_eyeplant2_charge){
+        sprite_index = spr_eyeplant2_charge;
+        image_speed = 1;
+    }
+    charging -= 1;
+}else if(charging == 0){
+    charging = -1;
+    sprite_index = spr_eyeplant2;
+        image_speed = 0.1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="15">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//BIG LASER
+var las = instance_create(x,y,obj_basiclaser);
+las.direction = 180;
+las.delay = 50;
+las.ttl = 100;
+las.startWidth = 0.5;
+las.endWidth = 6;
+las.widthGrowRate = 10;
 </string>
           </argument>
         </arguments>
@@ -144,11 +223,11 @@ if(count==reset){
 for(i=0;i&lt;num;i++){
     var b = instance_create(x,y,obj_basicbullet);
     b.sprite_index = spr_bullet_red;
-    b.speed = 4;
-    b.accel = 0.4;
+    b.speed = 2;
+    b.accel = 0.2;
     b.maxspeed = 9;
     b.direction = dir+i*360/num;
-    set_bullet_parts(b, 12, 15, c_yellow, 0.6);
+    set_bullet_parts(b, 8, 10, c_yellow, 0.6);
 }
 </string>
           </argument>
@@ -180,40 +259,6 @@ for(i=0; i&lt;num; i++){
     b.whenStopHome = 15;
     b.direction = dir+i*360/num;
     set_bullet_parts(b, 12, 15, c_purple, 0.7);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="12">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//WEB
-for(i=0; i&lt;num; i++){
-    for(j=0; j&lt;10;j++){
-        var b = instance_create(x, y, obj_basicbullet);
-        b.sprite_index = spr_bullet_dark;
-        b.speed = 8;
-        b.accel = -0.4;
-        b.minspeed = 0.8+0.5*j;
-        b.direction = dir+i*360/num+irandom_range(-6,6);
-        set_bullet_parts(b, 12, 15, c_gray, 0.6);
-    }
 }
 </string>
           </argument>
