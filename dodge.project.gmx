@@ -31,6 +31,7 @@
       <sprite>sprites\spr_fuzz3</sprite>
       <sprite>sprites\spr_eyeplant</sprite>
       <sprite>sprites\spr_eyeplant2</sprite>
+      <sprite>sprites\spr_eyeplant2_charge</sprite>
       <sprite>sprites\spr_crystal</sprite>
       <sprite>sprites\spr_crystal_g</sprite>
       <sprite>sprites\spr_ltcrystal</sprite>
@@ -118,6 +119,7 @@
       <object>objects\obj_enemy</object>
       <object>objects\obj_enemy_turn</object>
       <object>objects\obj_crystal_emitter</object>
+      <object>objects\obj_boss2Emitter</object>
       <object>objects\obj_crystal</object>
     </objects>
     <object>objects\obj_basicBulletEmitter</object>
@@ -164,7 +166,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
-    <room>rooms\testboss</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
