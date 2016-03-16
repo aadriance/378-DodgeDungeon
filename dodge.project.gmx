@@ -163,8 +163,8 @@
     <object>objects\obj_unlockdungeon_2</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\testboss</room>
     <room>rooms\mainMenu</room>
+    <room>rooms\testboss</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
