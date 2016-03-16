@@ -48,6 +48,7 @@
     </sprites>
     <sprites name="bullets">
       <sprite>sprites\spr_laser_red</sprite>
+      <sprite>sprites\spr_beam_red</sprite>
       <sprite>sprites\spr_laser_blue</sprite>
       <sprite>sprites\spr_bullet_red</sprite>
       <sprite>sprites\spr_bullet_green</sprite>
@@ -105,6 +106,7 @@
       <object>objects\obj_crystal_slow</object>
       <object>objects\obj_crystal_g</object>
       <object>objects\obj_bouncy</object>
+      <object>objects\obj_mage_red</object>
       <object>objects\obj_dgn1_boss</object>
       <object>objects\fuzzSpawner1</object>
       <object>objects\obj_enemy</object>
