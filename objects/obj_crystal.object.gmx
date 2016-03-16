@@ -92,12 +92,6 @@ if(movecount == whenAttackWhileStationary &amp;&amp; myLife &gt; 0){
         event_user(attackType);
     }
 }
-if(movecount == whenAttackWhileStationary &amp;&amp; myLife &gt; 0){
-    myEmitter.attackType = attackType;
-    with(myEmitter){
-        event_user(attackType);
-    }
-}
 
 if(movecount == stationaryTime){
     xDest = random_range(xBound, room_width-xBound);

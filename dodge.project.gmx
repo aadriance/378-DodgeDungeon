@@ -63,6 +63,7 @@
     <sprite>sprites\spr_small_health</sprite>
     <sprite>sprites\spr_big_health</sprite>
     <sprite>sprites\spr_pop</sprite>
+    <sprite>sprites\spr_title</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
