@@ -10,7 +10,10 @@
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>if (audio_is_playing(snd_dgn0_bgm)) {
+    audio_stop_sound(snd_dgn0_bgm);
+    audio_play_sound(snd_dgn1_bgm, 1, true);
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

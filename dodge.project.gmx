@@ -15,6 +15,8 @@
     <sound>sound\snd_sword_2</sound>
     <sound>sound\snd_heal</sound>
     <sound>sound\snd_bullet_fired</sound>
+    <sound>sound\snd_dgn0_bgm</sound>
+    <sound>sound\snd_bullet_spawn</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -153,6 +155,7 @@
       <object>objects\obj_game_over</object>
       <object>objects\obj_instructions</object>
       <object>objects\obj_win</object>
+      <object>objects\obj_credits</object>
     </objects>
     <objects name="introText">
       <object>objects\room01_instr</object>
@@ -195,6 +198,27 @@
       <room>rooms\dgn1_C7</room>
       <room>rooms\dgn1_prep_C6</room>
       <room>rooms\dgn1_boss_C6</room>
+      <rooms name="dgn2">
+        <room>rooms\dgn2_start_C7</room>
+        <room>rooms\dgn2_C6</room>
+        <room>rooms\dgn2_D6</room>
+        <room>rooms\dgn2_B6</room>
+        <room>rooms\dgn2_C5</room>
+        <room>rooms\dgn2_B5</room>
+        <room>rooms\dgn2_C4</room>
+        <room>rooms\dgn2_D4</room>
+        <room>rooms\dgn2_C3</room>
+        <room>rooms\dgn2_D3</room>
+        <room>rooms\dgn2_B3</room>
+        <room>rooms\dgn2_B4</room>
+        <room>rooms\dgn2_A3</room>
+        <room>rooms\dgn2_A4</room>
+        <room>rooms\dgn2_A2</room>
+        <room>rooms\dgn2_B2</room>
+        <room>rooms\dgn2_B1</room>
+        <room>rooms\dgn2_C1</room>
+        <room>rooms\dgn2_D1</room>
+      </rooms>
       <rooms name="test rooms">
         <room>rooms\dgn1_whiplash</room>
         <room>rooms\dgn1_fuzzballs</room>
@@ -206,30 +230,11 @@
         <room>rooms\dgn1_bouncyAndFuzzes</room>
       </rooms>
     </rooms>
-    <rooms name="dgn2">
-      <room>rooms\dgn2_start_C7</room>
-      <room>rooms\dgn2_C6</room>
-      <room>rooms\dgn2_D6</room>
-      <room>rooms\dgn2_B6</room>
-      <room>rooms\dgn2_C5</room>
-      <room>rooms\dgn2_B5</room>
-      <room>rooms\dgn2_C4</room>
-      <room>rooms\dgn2_D4</room>
-      <room>rooms\dgn2_C3</room>
-      <room>rooms\dgn2_D3</room>
-      <room>rooms\dgn2_B3</room>
-      <room>rooms\dgn2_B4</room>
-      <room>rooms\dgn2_A3</room>
-      <room>rooms\dgn2_A4</room>
-      <room>rooms\dgn2_A2</room>
-      <room>rooms\dgn2_B2</room>
-      <room>rooms\dgn2_B1</room>
-      <room>rooms\dgn2_C1</room>
-      <room>rooms\dgn2_D1</room>
-    </rooms>
     <room>rooms\rm_instructions</room>
+    <room>rooms\testboss</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_credits</room>
     <room>rooms\rm_win</room>
   </rooms>
   <help>
