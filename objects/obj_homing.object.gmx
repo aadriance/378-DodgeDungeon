@@ -36,7 +36,7 @@ angVelocity = 0;    //angle turning speed
 numBounces = 0;     //# times to bounce off walls. UNIMPLEMENTED!!!
 
 whenHome = 30;
-whenStopHome = 40;
+whenStopHome = 30;
 </string>
           </argument>
         </arguments>

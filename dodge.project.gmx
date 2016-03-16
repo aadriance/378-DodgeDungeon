@@ -203,7 +203,8 @@
       </rooms>
     </rooms>
     <rooms name="dgn2">
-      <room>rooms\dgn2_start_C6</room>
+      <room>rooms\dgn2_start_C7</room>
+      <room>rooms\dgn2_C6</room>
       <room>rooms\dgn2_D6</room>
       <room>rooms\dgn2_B6</room>
       <room>rooms\dgn2_C5</room>

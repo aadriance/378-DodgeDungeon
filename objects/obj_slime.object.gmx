@@ -84,7 +84,7 @@ if(movecount == stationaryTime + moverate){
     movecount = 0;
 }
 
-if(movecount % 4 == 0){
+if(movecount % 8 == 0){
         var b = instance_create(x, y, obj_basicbullet);
         b.sprite_index = spr_bullet_forest;
         b.speed = 0.4;
@@ -126,7 +126,7 @@ if(count == shotCool){
             bull.direction = ang + j*360/3 + i*2;
             bull.speed = 0.5;
             bull.maxspeed = 8;
-            bull.accel = 0.05;
+            bull.accel = 0.04;
             bull.sprite_index = spr_bullet_dark;
             set_bullet_parts(bull, 12, 15, c_green, 0.7);
         }

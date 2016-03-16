@@ -167,12 +167,15 @@
     <instance objName="obj_door" x="360" y="40" name="inst_4AD85897" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="400" y="40" name="inst_F74CBDF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_ctrl" x="120" y="120" name="inst_7CE0D349" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_crystal_g" x="400" y="280" name="inst_AD477E7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="360" y="520" name="inst_CBE41981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="400" y="520" name="inst_2EF60B08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal" x="0" y="240" name="inst_675B06C3" locked="0" code="roomList[0] = dgn2_A2&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="40" y="240" name="inst_3B3809CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="40" y="280" name="inst_79212CF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage_blue" x="560" y="120" name="inst_A847952D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage_blue" x="560" y="320" name="inst_78CAFCD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage_red" x="680" y="480" name="inst_93E0887C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bouncy" x="640" y="440" name="inst_804D8057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="120" y="520" w="40" h="40" xo="40" yo="120" id="10000052" name="inst_FEFCD357" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

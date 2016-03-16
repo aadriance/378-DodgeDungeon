@@ -34,14 +34,14 @@ direction = irandom(359);
 
 myLife = 2;
 
-num = 9;
+num = 8;
 minx = 100;
 maxx = room_width - 100;
 enemy_create(self, obj_basicBulletEmitter);
 
 count = 0;
 start_atk = 80;
-atk_startup = 15;
+atk_startup = 10;
 atk_duration = 60;
 </string>
           </argument>
@@ -100,8 +100,8 @@ if(count &lt; start_atk){
             las.image_yscale = 0.2;
             las.sprite_index = spr_beam_red;
             las.direction = -90;
-            las.delay = 30;
-            las.ttl = 30+10;
+            las.delay = 40;
+            las.ttl = 40+10;
         }
     }
     if(count == start_atk + atk_startup + atk_duration){

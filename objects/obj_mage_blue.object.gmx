@@ -110,7 +110,7 @@ if(count &lt; start_atk){
         y = newy;
     }
     if(count == start_atk + atk_startup + atk_duration){
-        sprite_index = spr_mage_idle;
+        sprite_index = spr_bluemage_idle;
         speed = spd;
         count = 0;
         image_speed = 0.2;
