@@ -166,7 +166,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
-    <room>rooms\testboss</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
