@@ -89,13 +89,13 @@
     <script>scripts\set_bullet_parts.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_player</object>
     <objects name="room control">
       <object>objects\obj_door</object>
       <object>objects\obj_portal</object>
       <object>objects\obj_room_ctrl</object>
       <object>objects\obj_wall</object>
     </objects>
+    <object>objects\obj_player</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_basicbullet</object>
     <object>objects\obj_homing</object>
@@ -131,9 +131,6 @@
       <object>objects\obj_sine_wave</object>
       <object>objects\obj_persistent_spiral</object>
     </objects>
-    <object>objects\obj_game_over</object>
-    <object>objects\obj_instructions</object>
-    <object>objects\obj_win</object>
     <objects name="effects">
       <object>objects\obj_anim_blast</object>
       <object>objects\obj_anim_pop</object>
@@ -141,6 +138,17 @@
     </objects>
     <object>objects\obj_small_health</object>
     <object>objects\obj_big_health</object>
+    <objects name="mainMenu">
+      <object>objects\obj_title</object>
+      <object>objects\obj_level1_button</object>
+      <object>objects\obj_leve2_button</object>
+      <object>objects\obj_level3_button</object>
+    </objects>
+    <objects name="screen text">
+      <object>objects\obj_game_over</object>
+      <object>objects\obj_instructions</object>
+      <object>objects\obj_win</object>
+    </objects>
     <objects name="introText">
       <object>objects\room01_instr</object>
       <object>objects\room01_story</object>
@@ -148,12 +156,6 @@
       <object>objects\room_2_instr</object>
       <object>objects\room03_story</object>
       <object>objects\room03_instr</object>
-    </objects>
-    <objects name="mainMenu">
-      <object>objects\obj_title</object>
-      <object>objects\obj_level1_button</object>
-      <object>objects\obj_leve2_button</object>
-      <object>objects\obj_level3_button</object>
     </objects>
     <object>objects\obj_unlockdungeon_1</object>
     <object>objects\obj_unlockdungeon_2</object>

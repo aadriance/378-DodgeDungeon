@@ -69,7 +69,7 @@
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>Shift to dash</string>
+            <string>SHIFT TO DASH</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -97,7 +97,7 @@
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>Dash grants invulnerability</string>
+            <string>INVINCIBLE WHILE DASHING</string>
           </argument>
           <argument>
             <kind>0</kind>

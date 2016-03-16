@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>13</kind>
-            <string>0</string>
+            <string>16777215</string>
           </argument>
         </arguments>
       </action>
@@ -78,6 +78,34 @@
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_color(c_white);
+draw_text(room_width/2, y, "HE STEPPED OUT, INTO THE LIGHT.
+#BREATHING IN THE FRESH OUTDOOR AIR, HE CONTINUES WALKING.
+#ALL HE KNOWS IS HIS NAME, BUT IT'S A START.
+#HE'LL REMEMBER IT ALL, IN TIME.
+#HIS TERRIBLE ORIGINS...
+#But we don't have the time for that story.
+#THE END");
+</string>
           </argument>
         </arguments>
       </action>
