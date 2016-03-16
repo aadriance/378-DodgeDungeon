@@ -177,6 +177,8 @@
     <instance objName="obj_slime" x="160" y="200" name="inst_8A1E1924" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzball" x="200" y="120" name="inst_1434CB83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fuzzball" x="120" y="480" name="inst_422D37DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="720" y="320" name="inst_35245B90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="760" y="320" name="inst_98FDECE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="120" y="520" w="40" h="40" xo="40" yo="120" id="10000052" name="inst_FEFCD357" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
