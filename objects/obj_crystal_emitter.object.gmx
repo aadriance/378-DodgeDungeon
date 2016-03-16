@@ -68,7 +68,7 @@ for(i = 0; i &lt; num3; i += 1){
         b.speed = 5.2+j*0.5;
         b.direction = offset + i * 360/num3;
         b.numBounces = 2;
-        set_bullet_parts(b, 12, 15, c_lime, 0.4);
+        set_bullet_parts(b, 12, 15, c_ltgray, 0.4);
     }
 }
 </string>
