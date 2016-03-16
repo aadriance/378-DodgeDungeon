@@ -175,7 +175,6 @@
     <instance objName="obj_door" x="720" y="240" name="inst_D4C5EE2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="720" y="280" name="inst_D6DA3CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="680" y="120" name="inst_388F2B6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="320" y="280" name="inst_1D8E4FDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="680" y="480" name="inst_FA3D4B61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="720" y="320" name="inst_8B7F652D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="760" y="320" name="inst_9D6FD852" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
