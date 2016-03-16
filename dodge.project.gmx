@@ -14,6 +14,7 @@
     <sound>sound\snd_player_hit</sound>
     <sound>sound\snd_sword_2</sound>
     <sound>sound\snd_heal</sound>
+    <sound>sound\snd_bullet_bounce</sound>
     <sound>sound\snd_dgn0_bgm</sound>
     <sound>sound\snd_bullet_spawn</sound>
   </sounds>
