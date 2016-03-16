@@ -106,6 +106,7 @@
       <object>objects\obj_slime</object>
       <object>objects\obj_fuzzbro</object>
       <object>objects\obj_plant</object>
+      <object>objects\obj_dgn2_boss</object>
       <object>objects\obj_crystal_fast</object>
       <object>objects\obj_crystal_slow</object>
       <object>objects\obj_crystal_g</object>
@@ -162,6 +163,7 @@
     <object>objects\obj_unlockdungeon_2</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\testboss</room>
     <room>rooms\mainMenu</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
