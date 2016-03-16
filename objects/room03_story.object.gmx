@@ -69,7 +69,7 @@
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>"I HAVE TO GET OUT OF HERE."</string>
+            <string>I HAVE TO GET#OUT OF HERE.</string>
           </argument>
           <argument>
             <kind>0</kind>
