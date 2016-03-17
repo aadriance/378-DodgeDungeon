@@ -156,6 +156,8 @@
       <object>objects\obj_game_over</object>
       <object>objects\obj_instructions</object>
       <object>objects\obj_win</object>
+      <object>objects\obj_cut1</object>
+      <object>objects\obj_cut2</object>
       <object>objects\obj_credits</object>
     </objects>
     <objects name="introText">
@@ -237,6 +239,8 @@
     <room>rooms\rm_gameOver</room>
     <room>rooms\rm_credits</room>
     <room>rooms\rm_win</room>
+    <room>rooms\rm_cut1</room>
+    <room>rooms\rm_cut2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
