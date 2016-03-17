@@ -160,7 +160,6 @@
     <instance objName="obj_wall" x="640" y="520" name="inst_8332BDAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="680" y="520" name="inst_76781D0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="40" y="320" name="inst_31295530" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_room_ctrl" x="120" y="120" name="inst_7CE0D349" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="360" y="0" name="inst_5760E8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="400" y="0" name="inst_F421FFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="400" y="40" name="inst_E445D814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -169,10 +168,6 @@
     <instance objName="obj_wall" x="400" y="520" name="inst_7C5569C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="360" y="560" name="inst_D4328FAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="400" y="560" name="inst_B8192F71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="40" y="240" name="inst_FADE19BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="40" y="280" name="inst_4E318A40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="720" y="240" name="inst_2AD58BEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="720" y="280" name="inst_CFEBE624" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal" x="0" y="240" name="inst_3541848A" locked="0" code="roomList[0] = dgn2_B1" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal" x="760" y="240" name="inst_40471241" locked="0" code="roomList[0] = dgn2_D1" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="720" y="320" name="inst_643877D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -100,6 +100,8 @@ if(count &lt; start_atk){
             las.image_yscale = 0.2;
             las.sprite_index = spr_beam_red;
             las.direction = -90;
+            las.startWidth = 0.3;
+            las.endWidth = 1.4;
             las.delay = 40;
             las.ttl = 40+10;
         }
