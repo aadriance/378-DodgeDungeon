@@ -150,6 +150,7 @@
       <object>objects\obj_level1_button</object>
       <object>objects\obj_leve2_button</object>
       <object>objects\obj_level3_button</object>
+      <object>objects\obj_credits_button</object>
     </objects>
     <objects name="screen text">
       <object>objects\obj_game_over</object>
@@ -170,6 +171,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
+    <room>rooms\testboss</room>
     <rooms name="dgn0">
       <room>rooms\dgn0_start</room>
       <room>rooms\dgn0_01</room>
@@ -231,7 +233,6 @@
       </rooms>
     </rooms>
     <room>rooms\rm_instructions</room>
-    <room>rooms\testboss</room>
     <room>rooms\gideonRoom</room>
     <room>rooms\rm_gameOver</room>
     <room>rooms\rm_credits</room>
