@@ -176,8 +176,8 @@
     <instance objName="obj_portal" x="760" y="240" name="inst_71C597F0" locked="0" code="roomList[0] = dgn2_C1&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="720" y="320" name="inst_607DBA92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="760" y="320" name="inst_2AF4857D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="240" y="200" name="inst_1601C8D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="560" y="200" name="inst_237BB12A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="320" y="240" name="inst_1601C8D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="480" y="240" name="inst_237BB12A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal_g" x="120" y="120" name="inst_0899CFF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_red" x="400" y="120" name="inst_42B4B9E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal_g" x="680" y="120" name="inst_97B81A9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

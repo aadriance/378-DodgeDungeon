@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="5" enumb="90">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(mainMenu);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -52,17 +75,16 @@
             <string>draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
-draw_text(room_width/2, room_height/4, "Credits");
+draw_text(room_width/2, room_height/4, "CREDITS");
 draw_text(room_width/2, room_height/4 + 30, "Team Members:");
 draw_text(room_width/2, room_height/4 + 60, "Gideon Wong, Andrew Adriance, Kevin Hongtongsak");
 
-draw_text(room_width/2, room_height/4 + 120, "Art credits to Gideon Wong for being an amazing artist.");
-draw_text(room_width/2, room_height/4 + 180, "Sound credits to Kevin MacLeod from incompetech.com.");
-draw_text(room_width/2, room_height/4 + 210, "Songs used from incompetech: Lightless Dawn and Overworld");
+draw_text(room_width/2, room_height/4 + 120, "Art: Gideon Wong");
+draw_text(room_width/2, room_height/4 + 180, "Music: Kevin MacLeod from incompetech.com.");
+draw_text(room_width/2, room_height/4 + 210, "Music from incompetech: Lightless Dawn and Overworld");
 
-draw_text(room_width/2, room_height/4 + 270, "Credits to Touhou for providing inspiration and years of bullet hell games for the public.");
-
-draw_text(room_width/2, room_height - 30, "Made for Fooad Khosmood's CPE 378 class");
+draw_text(room_width/2, room_height/4 + 270, "Made for Fooad Khosmood's CPE 378 class");
+draw_text(room_width/2, room_height - 30, "PRESS Z TO RETURN TO MENU");
 //# Art designed and created by Gideon Wong.
 //# Dungeon 0 and 1 BGM credits to Kevin MacLeod from Incompetech. ");
 </string>
