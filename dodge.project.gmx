@@ -26,6 +26,7 @@
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_chain</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_black</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_portal</sprite>
     <sprites name="enemies">
