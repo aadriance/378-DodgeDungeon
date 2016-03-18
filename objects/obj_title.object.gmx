@@ -103,13 +103,13 @@ if keyboard_check(ord('J')) &amp;&amp; keyboard_check(ord('K')) &amp;&amp; keybo
           <argument>
             <kind>1</kind>
             <string>if global.level == 1 {
-   draw_text(x, y + sprite_height * 1.2, "HELLO ---- KELER")
+   draw_text(x, y + sprite_height * 1.2, "HELLO ... SKELER")
 }
 if global.level == 2 {
-   draw_text(x, y + sprite_height * 1.2, "HELLO SAM KELER")
+   draw_text(x, y + sprite_height * 1.2, "HELLO SAM SKELER")
 }
 else {
-   draw_text(x, y + sprite_height * 1.2, "HELLO ---- ----")
+   draw_text(x, y + sprite_height * 1.2, "HELLO ...")
 }
 </string>
           </argument>
