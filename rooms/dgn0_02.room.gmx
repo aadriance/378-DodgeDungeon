@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_portal" x="360" y="0" name="inst_B9968B96" locked="0" code="roomList[0] = dgn0_01&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_portal" x="360" y="560" name="inst_2F5960C6" locked="0" code="roomList[0] = dgn1_start_A1&#xA;destroy = true&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal" x="360" y="560" name="inst_2F5960C6" locked="0" code="roomList[0] = dgn1_start_A1&#xA;destroy = true" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="room03_story" x="600" y="480" name="inst_5C1A4035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="room03_instr" x="40" y="120" name="inst_77404363" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="320" y="40" name="inst_1D91F6C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
