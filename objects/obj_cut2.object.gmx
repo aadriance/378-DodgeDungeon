@@ -76,7 +76,8 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white);
-draw_text(room_width/2, y, "MY NAME IS SAM SKELER.");
+draw_text(room_width/2, y, "MY NAME IS SAM SKELER.
+##PRESS Z TO MOVE ON");
 </string>
           </argument>
         </arguments>
